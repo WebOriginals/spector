@@ -1,0 +1,170 @@
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+//-----------ОСНОВНЫЕ ЦВЕТА------------------
+$color_1: #FFFFFF;
+$color_2: #181818;
+$color_3: #EB8B55;
+$color_4: #657C90;
+$color_5: #6B8D72;
+$color_6: #898989;
+$color_7: #D2D2D2;
+
+$link-img: '../';
+
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1735;
+$md1: $maxWidthContainer + 20;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+@import "null";
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+body {
+  @include adaptive-font(18,16,1);
+  font-weight: 400;
+  color: $color_2;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  background-color: $color_1;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &._loaded {
+  }
+}
+
+
+
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+._container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: $md1+px) {
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+    padding: 0 20px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.h1{
+  @include adaptive-font(48,24,1);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.h2{
+  @include adaptive-font(36,20,1);
+  font-weight: 900;
+}
+
+.h3{
+  @include adaptive-font(26,18,1);
+  font-weight: 900;
+}
+
+.h4{
+  @include adaptive-font(22,16,1);
+  font-weight: 900;
+}
+
+//-----------Кнопка основная------------------
+
+.button-w {
+  background: $color_1;
+  color: $color_2;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  cursor: pointer;
+  transition: .5s;
+  width: fit-content;
+  @include adaptive-font(18,16,1);
+  font-weight: 500;
+  border-radius: 30px;
+  border: 1px solid $color_2;
+
+  &:hover {
+    border: 1px solid lighten($color_2, 10);
+    color: lighten($color_2, 10);
+  }
+}
+
+.button-o {
+  background: $color_3;
+  color: $color_1;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  cursor: pointer;
+  transition: .5s;
+  width: fit-content;
+  @include adaptive-font(18,16,1);
+  font-weight: 500;
+  border-radius: 30px;
+
+
+  &:hover {
+    background: lighten($color_3, 10);
+  }
+  &:active {
+    background: darken($color_3, 20);
+  }
+}
+
+
+
+
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.page {
+  flex: 1 1 auto;
+  padding: 0 0 50px;
+  background: #E5E5E5;
+}
+
+
+//===================================================================================================================================
+
+//</ОСНОВНОЙ БЛОК>====================================================================================================
+
+
+

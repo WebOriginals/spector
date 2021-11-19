@@ -1,0 +1,18 @@
+mixin head(title)
+    head
+        title= title
+        meta(charset='UTF-8')
+        meta(name='format-detection' content='telephone=no')
+        link(rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css")
+        link(href='https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap', rel='stylesheet')
+        link(rel='stylesheet' href='css/style.min.css')
+        link(rel='shortcut icon' href='favicon.ico')
+        // <meta name="robots" content="noindex, nofollow">
+        // <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+
+mixin title(title)
+    section.sec-title-page
+        .container
+            .title-page= title
