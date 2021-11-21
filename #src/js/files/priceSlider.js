@@ -35,14 +35,12 @@ if (priceSlider) {
         priceSlider.noUiSlider.set([priceStartValue, priceEndValue]);
     }
 
-    var snapValues = [
+    let snapValues = [
         document.getElementById('price-start'),
         document.getElementById('price-end')
     ];
     priceSlider.noUiSlider.on('update', function (values, handle) {
         snapValues[handle].value = values[handle];
-        //console.log(snapValues[handle]);
-        console.log(values[handle]);
     });
 }
 

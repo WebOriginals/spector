@@ -4,6 +4,7 @@
 @@include('files/bodyLook.js')
 @@include('files/popup.js')
 @@include('files/select.js')
+@@include('files/filter.js')
 
 @@include('files/priceSlider.js')
 

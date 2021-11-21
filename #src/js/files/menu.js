@@ -69,7 +69,7 @@ if (menuLinks.length > 0) {
 // menu ==================================
 
 
-console.log(subMenuTitle);
+
 subMenuTitle.addEventListener('click', (event) => {
     body.parentNode.classList.remove('_active');
 })
