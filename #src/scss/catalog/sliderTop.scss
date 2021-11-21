@@ -1,0 +1,41 @@
+.sliderTop{
+  padding: 0 0 90px;
+  @include mq('tablet-wide') {
+    padding: 0 0 150px;
+  }
+
+  &__body{
+
+  }
+  &__container{
+
+  }
+  &-slide{
+    background-color: rgba(163, 144, 133, 0.1);
+    display: grid;
+    gap: 15px;
+    justify-items: center;
+    padding: 20px;
+
+    @include mq('tablet-wide') {
+      gap: 30px;
+      padding: 30px;
+    }
+
+    &__img{
+      width: 90px;
+      height: 90px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include mq('tablet-wide') {
+        width: 140px;
+        height: 140px;
+      }
+
+    }
+    &__name{
+
+    }
+  }
+}

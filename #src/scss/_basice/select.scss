@@ -6,7 +6,7 @@
 }
 .select__title {
   color: #000;
-  border: 1px solid #d9d9d9;
+  //border: 1px solid #d9d9d9;
   background-color: #fff;
   cursor: pointer;
   border-radius: 5px;
@@ -15,12 +15,13 @@
   display: flex;
   font-size: 16px;
   height: 50px;
-  padding: 0px 20px;
+  padding: 0px 0px;
   align-items: center;
   justify-content: space-between;
   flex-direction: row-reverse;
-  border: 1px solid #888;
+  //border: 1px solid #888;
   border-radius: 5px;
+  gap: 15px;
 }
 .select__value span {
   height: 1em;
@@ -35,7 +36,7 @@
   transition: all 0.3s ease 0s;
   width: 11px;
   height: 7px;
-  background: url("../img/icons/black-down-arrow.svg") center / 100% no-repeat;
+  background: url("../img/icons/down-arrow.svg") center / 100% no-repeat;
 }
 .select__options {
   color: #000;
@@ -46,7 +47,7 @@
   min-width: 100%;
   left: 0;
   background-color: #fff;
-  border: 1px solid #888;
+  //border: 1px solid #888;
   font-size: 16px;
   padding: 0px 0px 5px 0px;
   max-height: 300px;
@@ -55,7 +56,7 @@
 }
 .select__option {
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 10px 0px;
   margin: 0px 0px 0px 0px;
 }
 .select._active {

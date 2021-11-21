@@ -1,31 +1,34 @@
 .dropDownList-title{
-  padding-bottom: 10px;
+
   cursor: pointer;
   padding-right: 25px;
   background-position: right 10px;
   background-repeat: no-repeat;
   width: 100%;
+  position: relative;
   @include mq('tablet') {
     width: fit-content;
   }
 
-  @if ($link-img == '') {
-    background-image: url("./../../../img/icons/ar.svg");
-  } @else {
-    background-image: url($link-img + "/img/icons/ar.svg");
+  &:after{
+    content: '';
+    background-image: url("./../img/icons/down-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    display: flex;
+    top: 4px;
+    right: 0;
   }
 
+  &.open:after{
+    transform: rotate(180deg);
+    padding-bottom: 10px;
+  }
   &.open{
-    @if ($link-img == '') {
-      background-image: url("./../../../img/icons/ar-d.svg");
-    } @else {
-      background-image: url($link-img + "/img/icons/ar-d.svg");
-    }
+    padding-bottom: 10px;
   }
 }
 
-.dropDownList-hidden{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-}

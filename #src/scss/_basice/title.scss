@@ -1,0 +1,7 @@
+.titlePage{
+  padding: 5px 0 30px;
+  @include mq('tablet-wide') {
+    padding: 10px 0 60px;
+  }
+
+}

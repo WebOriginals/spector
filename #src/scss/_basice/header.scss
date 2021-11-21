@@ -1,7 +1,10 @@
 .header {
-  padding: 10px 0;
+  padding: 10px 10px;
   @include mq('tablet-wide') {
-    padding: 20px 0;
+    padding: 20px 20px;
+  }
+  @include mq('desktop') {
+    padding: 20px 60px;
   }
 
   &-body {
@@ -15,8 +18,9 @@
       grid-template-columns: 130px 1fr;
     }
     @include mq('desktop') {
-      grid-gap: 50px;
+      grid-gap: 130px;
       grid-template-columns: 253px 1fr;
+
     }
 
     &__logo{
@@ -133,6 +137,7 @@
           background: $color_1;
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
           border-radius: 5px;
+          z-index: 2;
 
           &.hiden{
             display: none;
@@ -194,6 +199,7 @@
             top: 40px;
             left: 0;
             height: calc(100vh - 50px);
+            overflow-y: auto;
           }
         }
 

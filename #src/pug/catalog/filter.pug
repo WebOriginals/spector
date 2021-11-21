@@ -1,0 +1,67 @@
+include ./../../pug/mixins
+section.catalogFilter
+    ._container
+        .catalogFilter__body.catalogFilter-body
+            h2.catalogFilter-body__title.h2 Все товары категории свет
+            .catalogFilter-body__middle
+                .catalogFilter-body__middle-sale
+                    label(for='sale') Скидка
+                    input#sale.switch(type='checkbox', checked,)
+
+
+                .catalogFilter-body__middle-sort
+                    select.form__select(name='age')
+                        option(value='Popular', selected='') Популярное
+                        option(value='Ascending') По возростанию
+                        option(value='Descending') По убывания
+
+
+                .catalogFilter-body__middle-filter
+                    span Фильтр
+                    svg(width='26', height='26', viewbox='0 0 26 26', fill='none', xmlns='http://www.w3.org/2000/svg')
+                        path(d='M7.11083 3.52832L23.8919 3.52832C24.1979 3.52832 24.4453 3.28095 24.4453 2.97486C24.4453 2.66878 24.1979 2.42141 23.8919 2.42141L7.11144 2.42141C6.85074 1.04545 5.6436 -8.21849e-07 4.19244 -8.85281e-07C2.55253 -9.56964e-07 1.21758 1.33444 1.21758 2.97486C1.21758 4.61528 2.55253 5.94972 4.19244 5.94972C5.64309 5.94972 6.85074 4.90427 7.11083 3.52832ZM2.32398 2.97486C2.32398 1.94488 3.16246 1.10691 4.19193 1.10691C5.22192 1.10691 6.05989 1.94488 6.05989 2.97486C6.05989 4.00484 5.22192 4.84281 4.19193 4.84281C3.16195 4.84281 2.32398 4.00484 2.32398 2.97486Z', fill='#181818')
+                        path(d='M24.7822 23.0252C24.7822 21.3852 23.4478 20.0503 21.8074 20.0503C20.3567 20.0503 19.1491 21.0957 18.889 22.4717L2.10805 22.4717C1.80258 22.4717 1.5546 22.7197 1.5546 23.0252C1.5546 23.3312 1.80258 23.5786 2.10805 23.5786L18.889 23.5786C19.1497 24.9546 20.3567 26 21.8074 26C23.4478 26 24.7822 24.6662 24.7822 23.0252ZM19.9394 23.0252C19.9394 21.9957 20.7774 21.1572 21.8074 21.1572C22.8373 21.1572 23.6753 21.9957 23.6753 23.0252C23.6753 24.0551 22.8373 24.8931 21.8074 24.8931C20.7774 24.8931 19.9394 24.0551 19.9394 23.0252Z', fill='#181818')
+                        path(d='M16.0869 13.4441L23.8919 13.4441C24.1979 13.4441 24.4453 13.1967 24.4453 12.8906C24.4453 12.5852 24.1979 12.3372 23.8919 12.3372L16.0869 12.3372C15.8262 10.9612 14.6192 9.91577 13.1685 9.91577C11.7179 9.91577 10.5102 10.9612 10.2501 12.3372L2.44517 12.3372C2.13909 12.3372 1.89172 12.5852 1.89172 12.8906C1.89172 13.1967 2.13909 13.4441 2.44517 13.4441L10.2495 13.4441C10.5102 14.82 11.7173 15.8655 13.1679 15.8655C14.6185 15.8655 15.8262 14.8206 16.0869 13.4441ZM11.3936 13.4441C11.3382 13.2687 11.3006 13.0854 11.3006 12.8906C11.3006 12.6969 11.3382 12.5132 11.3936 12.3372C11.6316 11.5789 12.3328 11.0227 13.1685 11.0227C14.0042 11.0227 14.7055 11.5789 14.9435 12.3372C14.9988 12.5132 15.0365 12.6969 15.0365 12.8906C15.0365 13.0855 14.9988 13.2687 14.9435 13.4441C14.7055 14.2029 14.0042 14.7586 13.1685 14.7586C12.3328 14.7586 11.631 14.2029 11.3936 13.4441Z', fill='#181818')
+                        clippath#clip0_225_160
+                            rect(width='26', height='26', fill='white', transform='translate(26) rotate(90)')
+
+
+            .catalogFilter-body__bottom.catalogFilter-body-bottom
+                +selectedFilters('Тип товара: ', 'Люстры')
+                +selectedFilters('Цена:', '572 - 22 740  ₽')
+                +selectedFilters('Цвет плафона: ', 'Черный')
+
+            .catalogFilter-body__all.catalogFilter-body-all
+                .catalogFilter-body-all__top
+                    button.close
+                        svg(width='16', height='16', viewbox='0 0 10 10', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M5.91616 4.99173L9.80997 8.88565C10.0634 9.13893 10.0634 9.54845 9.80997 9.80174C9.55668 10.055 9.14716 10.055 8.89388 9.80174L4.99995 5.90782L1.10614 9.80174C0.852742 10.055 0.443335 10.055 0.190052 9.80174C-0.0633506 9.54845 -0.0633506 9.13893 0.190052 8.88565L4.08386 4.99173L0.190052 1.09781C-0.0633506 0.844522 -0.0633506 0.434998 0.190052 0.181714C0.316278 0.0553684 0.482247 -0.00810051 0.648098 -0.00810051C0.813948 -0.00810051 0.979799 0.0553684 1.10614 0.181714L4.99995 4.07563L8.89388 0.181714C9.02022 0.0553684 9.18607 -0.00810051 9.35192 -0.00810051C9.51777 -0.00810051 9.68362 0.0553684 9.80997 0.181714C10.0634 0.434998 10.0634 0.844522 9.80997 1.09781L5.91616 4.99173Z', fill='#898989')
+                            clippath#clip0_225_182
+                                rect(width='16', height='16', fill='white', transform='matrix(1 0 0 -1 0 10)')
+
+                    span Фильтр
+
+                    button.reset Сбросить
+                .catalogFilter-body-all__drop
+                    .wrapper-dropDownList
+                        .dropDownList-title Тип товара
+                        .dropDownList-hidden(style="display: none;")
+                            .groop
+                                input#product-type_1(type="checkbox" name="product-type" value="Эффектные покрытия" checked).input-checkbox
+                                label(for="product-type_1").label-checkbox Эффектные покрытия
+                            .groop
+                                input#product-type_2(type="checkbox" name="product-type" value="Среднефактурные покрытия").input-checkbox
+                                label(for="product-type_2").label-rcheckbox Среднефактурные покрытия
+
+                    .wrapper-dropDownList
+                        .dropDownList-title Диапазон цены
+                        .dropDownList-hidden(style="display: none;")
+                            .droplist-aside-slider
+                                .droplist-aside-body__inputs
+                                    .slot
+                                        label(for="price-start") от
+                                        input.droplist-aside-body__from.droplist-aside-body-input#price-start( type="number" value='')
+                                    .slot
+                                        label(for="price-end") до
+                                        input.droplist-aside-body__before.droplist-aside-body-input#price-end( type="number" value='')
+                                .droplist-aside-body__slider

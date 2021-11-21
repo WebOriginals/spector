@@ -13,6 +13,35 @@ mixin head(title)
 
 
 mixin title(title)
-    section.sec-title-page
-        .container
-            .title-page= title
+    section.titlePage
+        ._container
+            h1.h1= title
+
+mixin crumbs(title)
+    section.crumbs
+        ._container
+            ul.crumbs-list
+                li Spectr
+                li
+                    a(href="#")= title
+
+
+
+//catalog
+
+//catalog  sliderTop
+mixin sliderTop(img,title)
+    .swiper-slide.sliderTop__slide.sliderTop-slide
+        .sliderTop-slide__img(style=`background-image: url('${img}');`)
+        .sliderTop-slide__name= title
+
+//catalog selected filters
+mixin selectedFilters(title, text)
+    .catalogFilter-body-bottom__element.catalogFilter-body-bottom-element
+        .catalogFilter-body-bottom-element__title= title
+        .catalogFilter-body-bottom-element__text=  text
+        a(href="#")
+            svg(width='10', height='10', viewbox='0 0 10 10', fill='none', xmlns='http://www.w3.org/2000/svg')
+                path(d='M5.91616 4.99173L9.80997 8.88565C10.0634 9.13893 10.0634 9.54845 9.80997 9.80174C9.55668 10.055 9.14716 10.055 8.89388 9.80174L4.99995 5.90782L1.10614 9.80174C0.852742 10.055 0.443335 10.055 0.190052 9.80174C-0.0633506 9.54845 -0.0633506 9.13893 0.190052 8.88565L4.08386 4.99173L0.190052 1.09781C-0.0633506 0.844522 -0.0633506 0.434998 0.190052 0.181714C0.316278 0.0553684 0.482247 -0.00810051 0.648098 -0.00810051C0.813948 -0.00810051 0.979799 0.0553684 1.10614 0.181714L4.99995 4.07563L8.89388 0.181714C9.02022 0.0553684 9.18607 -0.00810051 9.35192 -0.00810051C9.51777 -0.00810051 9.68362 0.0553684 9.80997 0.181714C10.0634 0.434998 10.0634 0.844522 9.80997 1.09781L5.91616 4.99173Z', fill='#898989')
+                clippath#clip0_225_182
+                    rect(width='10', height='10', fill='white', transform='matrix(1 0 0 -1 0 10)')

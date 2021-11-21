@@ -27,8 +27,8 @@ $fontFamily: 'Alegreya Sans', sans-serif;
 @import "_defuld/originStyle";
 //@import "_basice/forms";
 //@import "_basice/bread-crumbs-headline";
-//@import "_basice/ui";
-//@import "_defuld/nouislider";
+@import "_basice/ui";
+@import "_defuld/nouislider";
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 //component
@@ -37,13 +37,19 @@ $fontFamily: 'Alegreya Sans', sans-serif;
 //@import "../component/lazyLoad/scss/lazyLoad.scss";
 //@import "../component/Tabs/scss/tabs.scss";
 //@import "../component/Quantity/scss/quantity.scss";
+@import "../component/dropDownLlist/scss/dropDownLlist.scss";
 
 
-@import "_basice/auth";
+
 @import "_basice/popup";
 @import "_basice/header";
 @import "_basice/menu/menu";
 @import "_basice/footer";
+@import "_basice/title";
+@import "_basice/crumbs";
+@import "_basice/inputs";
+
+
 @import "_basice/pagging";
 @import "_basice/select";
 @import "_basice/selectMultiple";
@@ -51,6 +57,10 @@ $fontFamily: 'Alegreya Sans', sans-serif;
 
 
 //main
+
+//catalog
+@import "catalog/sliderTop";
+@import "catalog/filter";
 
 
 

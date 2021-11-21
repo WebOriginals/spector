@@ -149,6 +149,7 @@ body._touch .menu__list > li._active .menu__arrow {
     padding: 70px 25px 30px 25px;
     transition: left 0.3s ease 0s;
     overflow: auto;
+    z-index: 1;
 
     @include maq('tablet-wide') {
       display: flex;

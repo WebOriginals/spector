@@ -12,7 +12,7 @@ $link-img: '../';
 
 $minWidth: 320px;
 $maxWidth: 1920;
-$maxWidthContainer: 1735;
+$maxWidthContainer: 1170;
 $md1: $maxWidthContainer + 20;
 $md2: 991.98;
 $md3: 767.98;
@@ -87,7 +87,7 @@ body {
 
 .h2{
   @include adaptive-font(36,20,1);
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .h3{
@@ -158,7 +158,7 @@ body {
 .page {
   flex: 1 1 auto;
   padding: 0 0 50px;
-  background: #E5E5E5;
+  //background: #E5E5E5;
 }
 
 

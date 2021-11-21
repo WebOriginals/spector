@@ -1,5 +1,3 @@
-
-
 //Select
 let selects = document.getElementsByTagName('select');
 if (selects.length > 0) {
@@ -155,7 +153,7 @@ function select_item(select) {
         '<div class="select__item">' +
         '<div class="select__title">' + select_type_content + '</div>' +
 
-        '<div class="select__options">' + '<input class="serch-option" type="text" placeholder="подсказка"> ' + select_get_options(select_options) + '</div>' +
+        '<div class="select__options">' + select_get_options(select_options) + '</div>' +
         '</></div>');
 
     select_actions(select, select_parent);

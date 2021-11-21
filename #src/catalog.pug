@@ -1,0 +1,18 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('Каталог')
+    body
+        .wrapper
+            include pug/_basic/_header
+            .page.main
+                +crumbs('Свет')
+                +title('Свет')
+                include pug/catalog/sliderTop
+                include pug/catalog/filter
+
+
+            include pug/_basic/_footer
+
+        include pug/_basic/_popup
+        include pug/_basic/_js
