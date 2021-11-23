@@ -3325,20 +3325,27 @@ textarea.input {
   width: 100%;
 }
 
+.gridGoods {
+  padding: 60px 0;
+}
+
 .gridGoods__body {
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .cardGood {
   position: relative;
-  padding: 20px;
+  padding: 10px;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
 }
 
 .cardGood__icons {
@@ -3346,6 +3353,12 @@ textarea.input {
   top: 20px;
   right: 20px;
   z-index: 10;
+  border-radius: 50%;
+  background-color: #EB8B55;
+  color: #FFFFFF;
+  padding: 18px 10px;
+  min-width: 40px;
+  min-height: 40px;
 }
 
 .cardGood-img {
@@ -3374,6 +3387,21 @@ textarea.input {
   bottom: 0;
   left: 0;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardGood-img__pagination .swiper-pagination-bullet {
+  width: inherit;
+  height: 100%;
+  border-radius: 0;
+  background-color: rgba(218, 218, 218, 0);
+  border-bottom: 2px solid #DADADA;
+}
+
+.cardGood-img__pagination .swiper-pagination-bullet-active {
+  border-bottom: 3px solid #181818;
 }
 
 .cardGood__name {
@@ -3390,7 +3418,42 @@ textarea.input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 10px;
+}
+
+.cardGood-management__price span {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.cardGood-management__price span.sale {
+  color: #EB8B55;
+}
+
+.cardGood-management__price span:nth-child(1) {
+  font-size: 24px;
+}
+
+.cardGood-management__price span:nth-child(2) {
+  font-size: 18px;
+  text-decoration: line-through;
+  color: #898989;
+  margin-left: 5px;
+}
+
+.cardGood-management__favarite.active path {
+  fill: #EB8B55;
+}
+
+.cardGood-basket__btn {
+  margin: auto;
+}
+
+@media only screen and (min-width: 370px) {
+  .gridGoods__body {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -3557,18 +3620,44 @@ textarea.input {
     display: none;
   }
 
+  .gridGoods__body {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cardGood {
+    padding: 20px;
+  }
+
+  .cardGood:hover {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+  }
+
+  .cardGood:hover .cardGood-basket {
+    opacity: 1;
+  }
+
   .cardGood-img {
     height: 270px;
   }
 
-  .cardGood-img__pagination .swiper-pagination-bullet {
-    width: 54px;
-    height: 2px;
-    background-color: #DADADA;
+  .cardGood-img__pagination {
+    height: 100%;
   }
 
-  .cardGood-img__pagination .swiper-pagination-bullet-active {
-    background-color: #181818;
+  .cardGood-management {
+    gap: 20px;
+  }
+
+  .cardGood-management__price span:nth-child(2) {
+    margin-left: 15px;
+  }
+
+  .cardGood-basket {
+    opacity: 0;
   }
 }
 
@@ -3585,13 +3674,6 @@ textarea.input {
 
   .header-body__logo {
     width: 250px;
-  }
-}
-
-@media only screen and (min-width: 1350px) {
-  .gridGoods__body {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -3658,9 +3740,25 @@ textarea.input {
   .cardGood__name {
     font-size: calc(14px + 4 * ((100vw - 320px) / 850));
   }
+
+  .cardGood-management__price span:nth-child(1) {
+    font-size: calc(16px + 8 * ((100vw - 320px) / 850));
+  }
+
+  .cardGood-management__price span:nth-child(2) {
+    font-size: calc(12px + 6 * ((100vw - 320px) / 850));
+  }
 }
 
 @media only screen and (max-width: 1023px) {
+  .button-w {
+    height: 35px;
+  }
+
+  .button-o {
+    height: 35px;
+  }
+
   .header-body-nav__top {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -3880,5 +3978,11 @@ textarea.input {
   ._container {
     max-width: none;
     padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 559px) {
+  .gridGoods ._container {
+    padding: 0 10px;
   }
 }
