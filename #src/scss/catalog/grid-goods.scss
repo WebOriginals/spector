@@ -1,0 +1,88 @@
+.gridGoods {
+
+  &__body {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    @include mq('tablet') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include mq('desktop1350') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.cardGood {
+  position: relative;
+  padding: 20px;
+  display: grid;
+  grid-gap: 10px;
+
+  &__icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+
+  &-img {
+    margin-top: 10px;
+    width: 100%;
+    height: 160px;
+    min-width: 0;
+    @include mq('tablet-wide') {
+      height: 270px;
+    }
+
+    &__slider {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__slide {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &__pagination{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+
+      @include mq('tablet-wide') {
+        .swiper-pagination-bullet {
+          width: 54px;
+          height: 2px;
+          background-color: #DADADA;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: $color_2
+        }
+      }
+    }
+  }
+
+  &__name {
+    @include adaptive-font(18, 14, 1);
+  }
+
+  &-management {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    &__price {
+
+    }
+
+    &__favarite {
+
+    }
+  }
+}

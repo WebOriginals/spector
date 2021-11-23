@@ -13,4 +13,5 @@
 //slider
 @@include('files/sliders/first.js')
 @@include('files/sliders/pageCatalog-top.js')
+@@include('files/sliders/pageCatalog-card.js')
 //slider

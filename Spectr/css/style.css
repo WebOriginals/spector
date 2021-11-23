@@ -3325,11 +3325,84 @@ textarea.input {
   width: 100%;
 }
 
+.gridGoods__body {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cardGood {
+  position: relative;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.cardGood__icons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.cardGood-img {
+  margin-top: 10px;
+  width: 100%;
+  height: 160px;
+  min-width: 0;
+}
+
+.cardGood-img__slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cardGood-img__slide {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cardGood-img__pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.cardGood__name {
+  font-size: 18px;
+}
+
+.cardGood-management {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
 @media only screen and (min-width: 768px) {
   .dropDownList-title {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .gridGoods__body {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -3483,6 +3556,20 @@ textarea.input {
   .catalogFilter-body-all .helper {
     display: none;
   }
+
+  .cardGood-img {
+    height: 270px;
+  }
+
+  .cardGood-img__pagination .swiper-pagination-bullet {
+    width: 54px;
+    height: 2px;
+    background-color: #DADADA;
+  }
+
+  .cardGood-img__pagination .swiper-pagination-bullet-active {
+    background-color: #181818;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -3498,6 +3585,13 @@ textarea.input {
 
   .header-body__logo {
     width: 250px;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .gridGoods__body {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -3559,6 +3653,10 @@ textarea.input {
 
   .catalogFilter-body-all__drop .wrapper-dropDownList .dropDownList-hidden .droplist-aside-body-input {
     font-size: calc(16px + 2 * ((100vw - 320px) / 850));
+  }
+
+  .cardGood__name {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 850));
   }
 }
 
