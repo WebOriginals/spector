@@ -95,7 +95,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 @media (max-width: 768px) {
   .menu__icon {
-    z-index: 5;
+    z-index: 51;
     display: block;
     position: relative;
     width: 30px;
@@ -149,7 +149,7 @@ body._touch .menu__list > li._active .menu__arrow {
     padding: 70px 25px 30px 25px;
     transition: left 0.3s ease 0s;
     overflow: auto;
-    z-index: 1;
+    z-index: 50;
 
     @include maq('tablet-wide') {
       display: flex;

@@ -1876,7 +1876,7 @@ body.ie ._ibg img {
 }
 
 .header-body__logo {
-  z-index: 5;
+  z-index: 51;
   width: 100px;
 }
 
@@ -2017,7 +2017,7 @@ body.ie ._ibg img {
 }
 
 .header-body__icon-nav {
-  z-index: 5;
+  z-index: 51;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3648,11 +3648,6 @@ textarea.input {
     display: none;
   }
 
-  .gridGoods__body {
-    -ms-grid-columns: (1fr)[4];
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   .cardGood {
     padding: 20px;
   }
@@ -3702,6 +3697,11 @@ textarea.input {
 
   .header-body__logo {
     width: 250px;
+  }
+
+  .gridGoods__body {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -3866,7 +3866,7 @@ textarea.input {
 
 @media (max-width: 768px) {
   .menu__icon {
-    z-index: 5;
+    z-index: 51;
     display: block;
     position: relative;
     width: 30px;
@@ -3939,7 +3939,7 @@ textarea.input {
     -o-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
     overflow: auto;
-    z-index: 1;
+    z-index: 50;
   }
 
   .menu__body._active {
@@ -4006,6 +4006,18 @@ textarea.input {
   ._container {
     max-width: none;
     padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pagging {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .pagging__more {
+    width: 100%;
   }
 }
 

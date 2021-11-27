@@ -24,7 +24,7 @@
     }
 
     &__logo{
-      z-index: 5;
+      z-index: 51;
       width: 100px;
       @include mq('tablet-wide') {
         width: 130px;
@@ -213,7 +213,7 @@
     }
 
     &__icon-nav{
-      z-index: 5;
+      z-index: 51;
       display: flex;
       gap: 10px;
 
