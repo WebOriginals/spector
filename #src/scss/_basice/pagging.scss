@@ -6,27 +6,47 @@
 	gap: 30px;
 	// .pagging__arrow
 	&__arrow {
+		transform: translateY(-15px);
+
+		&:hover{
+			path{
+				stroke: $color_3;
+			}
+		}
+	}
+
+	&__more{
+		&:hover{
+			color: $color_3;
+		}
 	}
 	// .pagging__list
 	&__list {
 		display: flex;
-		gap: 5px;
 		li {
 
 		}
 	}
 	// .pagging__item
 	&__item {
-		width: 30px;
+		width: 42px;
 		height: 30px;
-		color: $color_2;
+		color: #CACACA;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+
+		&:not(.none){
+			border-top: 2px solid #CACACA;
+		}
+
 		&._active,&:hover {
 
-			background: $color_3;
-			color: $color_1;
+			&:not(.none){
+				border-top: 2px solid $color_3;
+				color: $color_2;
+			}
 		}
 	}
 }

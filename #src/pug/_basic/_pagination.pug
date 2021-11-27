@@ -1,5 +1,6 @@
 .pagging
-    a.pagging__arrow(href='')
+    a.pagging__more(href='') Показать еще
+
     ul.pagging__list
         li
             a.pagging__item._active(href='') 1
@@ -11,4 +12,17 @@
             a.pagging__item(href='') 4
         li
             a.pagging__item(href='') 5
+        li
+            a.pagging__item.none(href='') ...
+
+        li
+            a.pagging__item(href='') 135
+
     a.pagging__arrow(href='')
+        svg(width='10', height='14', viewbox='0 0 10 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+            path(d='M8.65283 1L0.999771 7L8.65283 13', stroke='#181818', stroke-linecap='round', stroke-linejoin='round')
+
+    a.pagging__arrow(href='')
+        svg(width='10', height='14', viewbox='0 0 10 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+            path(d='M1.06104 1L8.7141 7L1.06104 13', stroke='#181818', stroke-linecap='round', stroke-linejoin='round')
+

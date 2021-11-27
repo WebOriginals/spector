@@ -2357,17 +2357,30 @@ body._touch .menu__list > li._active .menu__arrow {
   gap: 30px;
 }
 
+.pagging__arrow {
+  -webkit-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.pagging__arrow:hover path {
+  stroke: #EB8B55;
+}
+
+.pagging__more:hover {
+  color: #EB8B55;
+}
+
 .pagging__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5px;
 }
 
 .pagging__item {
-  width: 30px;
+  width: 42px;
   height: 30px;
-  color: #181818;
+  color: #CACACA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2379,10 +2392,14 @@ body._touch .menu__list > li._active .menu__arrow {
           justify-content: center;
 }
 
-.pagging__item._active,
-.pagging__item:hover {
-  background: #EB8B55;
-  color: #FFFFFF;
+.pagging__item:not(.none) {
+  border-top: 2px solid #CACACA;
+}
+
+.pagging__item._active:not(.none),
+.pagging__item:hover:not(.none) {
+  border-top: 2px solid #EB8B55;
+  color: #181818;
 }
 
 .select {
@@ -3337,6 +3354,13 @@ textarea.input {
   grid-template-columns: repeat(1, 1fr);
 }
 
+.gridGoods .pagging {
+  padding-top: 50px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .cardGood {
   position: relative;
   padding: 10px;
@@ -3441,7 +3465,11 @@ textarea.input {
   margin-left: 5px;
 }
 
-.cardGood-management__favarite.active path {
+.cardGood-management__favarite {
+  cursor: pointer;
+}
+
+.cardGood-management__favarite .active path {
   fill: #EB8B55;
 }
 

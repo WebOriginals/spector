@@ -22,6 +22,12 @@
       grid-template-columns: repeat(4, 1fr);
     }
   }
+
+  .pagging{
+    padding-top: 50px;
+    justify-content: flex-end;
+  }
+
 }
 
 .cardGood {
@@ -150,11 +156,15 @@
     }
 
 
-    &__favarite.active {
-      path {
-        fill: $color_3;
+    &__favarite{
+      cursor: pointer;
+      .active {
+        path {
+          fill: $color_3;
+        }
       }
     }
+
   }
 
   &-basket {
