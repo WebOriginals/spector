@@ -3528,6 +3528,8 @@ textarea.input {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .card-top-sliderMain {
@@ -3758,6 +3760,40 @@ textarea.input {
 
 .card-top-description__manual .button-w span {
   margin-right: 10px;
+}
+
+.card-slider {
+  padding: 45px 0;
+}
+
+.card-slider-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.card-slider-top__text {
+  color: #898989;
+}
+
+.card-slider-top__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.card-slider__slide {
+  padding: 10px;
 }
 
 @media only screen and (min-width: 370px) {
@@ -3998,6 +4034,21 @@ textarea.input {
   .card-top-description__favarite {
     margin-bottom: 50px;
   }
+
+  .card-slider {
+    padding: 75px 0;
+  }
+
+  .card-slider-top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 60px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -4125,6 +4176,10 @@ textarea.input {
 
   .card-top-description__drop .dropDownList-hidden ul li span:nth-child(2) {
     font-size: calc(16px + 2 * ((100vw - 320px) / 850));
+  }
+
+  .card-slider-top {
+    margin-bottom: calc(30px + 30 * ((100vw - 320px) / 850));
   }
 }
 
@@ -4288,6 +4343,10 @@ textarea.input {
             order: 10;
     width: 100%;
   }
+
+  .card-slider-top__nav {
+    display: none;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -4425,6 +4484,10 @@ textarea.input {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .menu__body::before {
+    display: none;
   }
 }
 

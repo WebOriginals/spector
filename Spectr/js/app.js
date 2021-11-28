@@ -688,9 +688,11 @@ if (document.querySelector('.card-top-sliderMain')) {
         slidesPerView: 4,
         freeMode: true,
         watchSlidesProgress: true,
+        speed: 800,
     });
     let card2 = new Swiper(".card-top-sliderMain", {
         spaceBetween: 10,
+        speed: 800,
         pagination: {
             el: ".card-top-sliderMain__pagination",
             clickable: true,
@@ -700,4 +702,42 @@ if (document.querySelector('.card-top-sliderMain')) {
         },
     });
 }
+if(document.querySelector('.card-slider__slider')){
+    document.querySelectorAll('.card-slider__slider').forEach((el) => {
+        let body = el.parentElement.parentElement;
+        let prev = body.querySelector('.card-slider-top__prevBtn');
+        let next = body.querySelector('.card-slider-top__nextBtn');
+        console.log(body);
+        console.log(prev);
+        console.log(next);
+        let cardSlider_ = new Swiper(el, {
+            slidesPerView: 1,
+            spaceBetween: 5,
+            speed: 800,
+            navigation: {
+                nextEl: next,
+                prevEl: prev,
+            },
+            breakpoints: {
+                // when window width is >= 320px
+
+                320: {
+                    slidesPerView: 1.5,
+                },
+
+                767: {
+                    slidesPerView: 3.2,
+                },
+
+                1200: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+    })
+}
+
+
+
+
 //slider

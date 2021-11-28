@@ -170,6 +170,9 @@ body._touch .menu__list > li._active .menu__arrow {
     height: 50px;
     background-color: $color_1;
     z-index: 2;
+    @include maq('tablet-wide') {
+      display: none;
+    }
   }
 
   .menu__list > li {

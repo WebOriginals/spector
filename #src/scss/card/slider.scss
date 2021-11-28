@@ -1,0 +1,42 @@
+.card-slider{
+  padding: 45px 0;
+
+  @include mq('tablet-wide') {
+    padding: 75px 0;
+  }
+
+  &-top{
+    display: flex;
+    flex-direction: column;
+    @include adaptive-value(margin-bottom,60,30,1);
+
+    @include mq('tablet-wide') {
+      flex-direction: row;
+      align-items: center;
+      gap: 60px;
+    }
+
+    &__title{
+
+    }
+    &__text{
+      color: #898989;
+    }
+    &__nav{
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      gap: 30px;
+      @include maq('tablet-wide') {
+        display: none;
+      }
+    }
+
+  }
+  &__slider{
+
+  }
+  &__slide{
+    padding: 10px;
+  }
+}

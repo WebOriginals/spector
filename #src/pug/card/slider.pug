@@ -1,0 +1,34 @@
+section.card-slider
+    ._container
+        .card-slider__top.card-slider-top
+            .card-slider-top__title.h1 из этой коллекции
+            .card-slider-top__text Легко подберите освещение в одном стиле
+            .card-slider-top__nav
+                .card-slider-top__prevBtn
+                    svg(width='28', height='11', viewbox='0 0 28 11', fill='none', xmlns='http://www.w3.org/2000/svg')
+                        path(fill-rule='evenodd', clip-rule='evenodd', d='M28 5.60873C28 5.15309 27.6342 4.78373 27.1831 4.78373L2.74219 4.78373L5.44761 1.33756C5.7279 0.980517 5.66852 0.461613 5.31497 0.178552C4.96142 -0.104509 4.44759 -0.0445384 4.16729 0.312502L-2.35132e-07 5.62082L4.17901 10.7021C4.46728 11.0526 4.98233 11.1007 5.32941 10.8096C5.67649 10.5185 5.72416 9.99838 5.43589 9.64788L2.79246 6.43372L27.1831 6.43372C27.6342 6.43372 28 6.06436 28 5.60873Z', fill='#051017')
+
+                .card-slider-top__nextBtn
+                    svg(width='28', height='11', viewbox='0 0 28 11', fill='none', xmlns='http://www.w3.org/2000/svg')
+                        path(fill-rule='evenodd', clip-rule='evenodd', d='M1.92396e-05 5.60873C1.92197e-05 5.15309 0.365771 4.78373 0.816949 4.78373L25.2578 4.78373L22.5524 1.33756C22.2721 0.980516 22.3315 0.461613 22.685 0.178551C23.0386 -0.104509 23.5524 -0.0445386 23.8327 0.312501L28 5.62082L23.821 10.7021C23.5327 11.0526 23.0177 11.1007 22.6706 10.8096C22.3235 10.5185 22.2758 9.99838 22.5641 9.64787L25.2075 6.43372L0.816949 6.43372C0.365771 6.43372 1.92595e-05 6.06436 1.92396e-05 5.60873Z', fill='#051017')
+
+
+        .card-slider__body
+            .swiper.card-slider__slider
+                .swiper-wrapper
+                    .swiper-slide.card-slider__slide
+                        +catalogCard()
+                    .swiper-slide.card-slider__slide
+                        +catalogCard()
+                    .swiper-slide.card-slider__slide
+                        +catalogCard()
+                    .swiper-slide.card-slider__slide
+                        +catalogCard()
+                    .swiper-slide.card-slider__slide
+                        +catalogCard()
+                    .swiper-slide.card-slider__slide
+                        +catalogCard()
+                    .swiper-slide.card-slider__slide
+                        +catalogCard()
+                    .swiper-slide.card-slider__slide
+                        +catalogCard()
