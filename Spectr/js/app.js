@@ -502,6 +502,7 @@ function selects_update_all() {
 
 
 
+//catalog
 let searchElements =  document.querySelectorAll('.serch-option');
 
 const searchOptions = (event) => {
@@ -530,20 +531,20 @@ searchElements.forEach(searchElement => {
 });
 
 
-let btnFilter = document.querySelector('.catalogFilter-body__middle-filter');
-let filterBody = document.querySelector('.catalogFilter-body-all');
-let close = document.querySelector('.catalogFilter-body-all__top .close');
+if(document.querySelector('.catalogFilter-body__middle-filter')) {
+    let btnFilter = document.querySelector('.catalogFilter-body__middle-filter');
+    let filterBody = document.querySelector('.catalogFilter-body-all');
+    let close = document.querySelector('.catalogFilter-body-all__top .close');
+    btnFilter.addEventListener('click', () => {
+        filterBody.classList.add('active');
+        document.querySelector('body').classList.add('_lock');
+    })
 
-btnFilter.addEventListener('click', () => {
-    filterBody.classList.add('active');
-    document.querySelector('body').classList.add('_lock');
-})
-
-close.addEventListener('click', () => {
-    filterBody.classList.remove('active');
-    document.querySelector('body').classList.remove('_lock');
-})
-
+    close.addEventListener('click', () => {
+        filterBody.classList.remove('active');
+        document.querySelector('body').classList.remove('_lock');
+    })
+}
 
 
 
@@ -675,10 +676,28 @@ if (document.querySelector('.sliderTop__container')) {
             clickable: true,
         },
     });
-
+     $('.cardGood-img__pagination .swiper-pagination-bullet').hover(function() {
+         $( this ).trigger( "click" );
+     });
  }
- $('.cardGood-img__pagination .swiper-pagination-bullet').hover(function() {
-     $( this ).trigger( "click" );
- });
 
+
+if (document.querySelector('.card-top-sliderMain')) {
+    let card = new Swiper(".card-top-sliderThumbs", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    let card2 = new Swiper(".card-top-sliderMain", {
+        spaceBetween: 10,
+        pagination: {
+            el: ".card-top-sliderMain__pagination",
+            clickable: true,
+        },
+        thumbs: {
+            swiper: card,
+        },
+    });
+}
 //slider

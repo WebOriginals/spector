@@ -15,7 +15,7 @@
             }
         });
         btnPlus.addEventListener('click', function () {
-
+            console.log('1');
             if(fieldValue < max){
                 fieldValue++;
                 field.value = fieldValue;

@@ -8,8 +8,8 @@
             clickable: true,
         },
     });
-
+     $('.cardGood-img__pagination .swiper-pagination-bullet').hover(function() {
+         $( this ).trigger( "click" );
+     });
  }
- $('.cardGood-img__pagination .swiper-pagination-bullet').hover(function() {
-     $( this ).trigger( "click" );
- });
+

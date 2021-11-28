@@ -93,7 +93,7 @@ body._touch .menu__list > li._active .menu__arrow {
     transition: all 0.3s ease 0s;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .menu__icon {
     z-index: 51;
     display: block;

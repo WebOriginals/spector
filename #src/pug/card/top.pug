@@ -1,0 +1,72 @@
+section.card-top
+    ._container.tit
+        .card-top__body
+            .card-top__sliders
+                .swiper.card-top__sliderMain.card-top-sliderMain
+                    .swiper-wrapper
+                        .swiper-slide.card-top-sliderMain__slide(style="background-image: url('img/card/slide.png');")
+                        .swiper-slide.card-top-sliderMain__slide(style="background-image: url('img/card/slide.png');")
+                        .swiper-slide.card-top-sliderMain__slide(style="background-image: url('img/card/slide.png');")
+                        .swiper-slide.card-top-sliderMain__slide(style="background-image: url('img/card/slide.png');")
+
+                    .card-top-sliderMain__pagination
+
+                .swiper.card-top__sliderThumbs.card-top-sliderThumbs
+                    .swiper-wrapper
+                        .swiper-slide.card-top-sliderThumbs__slide(style="background-image: url('img/card/slide.png');")
+                        .swiper-slide.card-top-sliderThumbs__slide(style="background-image: url('img/card/slide.png');")
+                        .swiper-slide.card-top-sliderThumbs__slide(style="background-image: url('img/card/slide.png');")
+                        .swiper-slide.card-top-sliderThumbs__slide(style="background-image: url('img/card/slide.png');")
+            .card-top__description.card-top-description
+                .card-top-description__sale -10%
+                .card-top-description__title(data-da=".tit,767,first") Люстра DUMO MD8506/6A
+                .card-top-description__text Матовый белый, золото, металл, 6х40W, E14
+                .card-top-description__article Артикул 816066
+                .card-top-description__price
+                    span 29 916 ₽
+                    span 29 916 ₽
+
+                .card-top-description__quantity.card-info__quantity
+                    .card-info__minus
+                        svg(width='16', height='2', viewbox='0 0 16 2', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M1.33333 2C0.596953 2 -1.95702e-08 1.55229 -4.37114e-08 1C-6.78525e-08 0.447716 0.596954 6.89162e-07 1.33333 6.56974e-07L14.6667 7.41554e-08C15.403 4.19672e-08 16 0.447715 16 1C16 1.55228 15.403 2 14.6667 2L1.33333 2Z', fill='#898989')
+
+                    input.card-info__number(data-max='10' value=1)
+                    .card-info__plus
+                        svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path(fill-rule='evenodd', clip-rule='evenodd', d='M8 16C8.55229 16 9 15.403 9 14.6667V9H14.6667C15.403 9 16 8.55228 16 8C16 7.44771 15.403 7 14.6667 7H9V1.33333C9 0.596953 8.55228 0 8 0C7.44771 0 7 0.596953 7 1.33333L7 7H1.33333C0.596954 7 0 7.44772 0 8C0 8.55229 0.596953 9 1.33333 9H7L7 14.6667C7 15.403 7.44772 16 8 16Z', fill='#898989')
+                .card-top-description__btn
+                    .button-o В корзину
+                .card-top-description__favarite.active
+                    svg(width='24', height='24', viewbox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                        path(d='M17.75 1C15.0879 1 12.8892 3.47266 12 4.63966C11.1108 3.47266 8.91211 1 6.24998 1C2.80373 1 0 4.16847 0 8.06252C0 10.187 0.843281 12.167 2.31933 13.522C2.3408 13.5591 2.36719 13.5933 2.39794 13.624L11.647 22.854C11.7446 22.9512 11.8721 23 12 23C12.1279 23 12.2558 22.9512 12.3535 22.8535L21.9102 13.3003L22.0088 13.2046C22.0869 13.1309 22.1641 13.0562 22.2505 12.9605C22.2866 12.9249 22.3164 12.8848 22.3394 12.8413C23.4112 11.5288 24 9.83594 24 8.06252C24 4.16847 21.1963 1 17.75 1ZM21.5073 12.2788C21.4936 12.295 21.4809 12.312 21.4697 12.3296C21.4229 12.3833 21.3716 12.4307 21.3208 12.479L11.9995 21.7935L3.21877 13.0303C3.19045 12.9746 3.15089 12.9238 3.10256 12.8814C1.76611 11.7144 0.999984 9.958 0.999984 8.06252C0.999984 4.71972 3.35498 2.00003 6.24998 2.00003C9.11231 2.00003 11.5552 5.73344 11.5796 5.77103C11.7642 6.05617 12.2358 6.05617 12.4204 5.77103C12.4448 5.73344 14.8877 2.00003 17.75 2.00003C20.645 2.00003 23 4.71977 23 8.06252C23 9.6377 22.4697 11.1353 21.5073 12.2788Z', fill='#181818')
+                    span В избранное
+                .card-top-description__btnl
+                    .button-w Быстрый заказ
+                .card-top-description__drop.wrapper-dropDownList
+                    .dropDownList-title Характеристики
+                    .dropDownList-hidden(style="display: none;")
+                        ul
+                            li
+                                span Диаметр ( мм )
+                                span 700
+                            li
+                                span Глубина врезного отверстия, мм
+                                span КЛЛ, ГЛН, LED
+                            li
+                                span Арматура
+                                span Металл
+                            li
+                                span Кол-во ламп ( шт )
+                                span 6
+                .card-top-description__manual
+                    span Инструкция
+                    a(href="" download).button-w
+                        span Скачать
+                        svg(width='22', height='22', viewbox='0 0 22 22', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M11 15.5834C10.6205 15.5834 10.3125 15.2754 10.3125 14.8959V0.6875C10.3125 0.307999 10.6205 0 11 0C11.3795 0 11.6875 0.307999 11.6875 0.6875V14.8959C11.6875 15.2754 11.3795 15.5834 11 15.5834Z', fill='#898989')
+                            path(d='M11.0004 15.5834C10.8244 15.5834 10.6485 15.5164 10.5145 15.3817L6.8479 11.715C6.57935 11.4465 6.57935 11.0111 6.8479 10.7424C7.11646 10.4738 7.55185 10.4738 7.82057 10.7424L11.0013 13.9232L14.1821 10.7424C14.4507 10.4738 14.8862 10.4738 15.1548 10.7424C15.4234 11.0111 15.4234 11.4465 15.1548 11.715L11.488 15.3817C11.3524 15.5164 11.1765 15.5834 11.0004 15.5834Z', fill='#898989')
+                            path(d='M19.4791 22H2.52089C1.13028 22 0 20.8697 0 19.4791V15.3541C0 14.9746 0.307999 14.6666 0.6875 14.6666C1.067 14.6666 1.375 14.9746 1.375 15.3541V19.4791C1.375 20.1107 1.88928 20.625 2.52089 20.625H19.4791C20.1107 20.625 20.625 20.1107 20.625 19.4791V15.3541C20.625 14.9746 20.933 14.6666 21.3125 14.6666C21.692 14.6666 22 14.9746 22 15.3541V19.4791C22 20.8697 20.8697 22 19.4791 22Z', fill='#898989')
+                            clippath#clip0_260_1454
+                                rect(width='22', height='22', fill='white')
+

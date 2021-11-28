@@ -36,7 +36,7 @@ $fontFamily: 'Alegreya Sans', sans-serif;
 //@import "../component/Modals/scss/modals.scss";
 //@import "../component/lazyLoad/scss/lazyLoad.scss";
 //@import "../component/Tabs/scss/tabs.scss";
-//@import "../component/Quantity/scss/quantity.scss";
+@import "../component/Quantity/scss/quantity.scss";
 @import "../component/dropDownLlist/scss/dropDownLlist.scss";
 
 
@@ -62,6 +62,9 @@ $fontFamily: 'Alegreya Sans', sans-serif;
 @import "catalog/sliderTop";
 @import "catalog/filter";
 @import "catalog/grid-goods";
+
+//card
+@import "card/top";
 
 
 
