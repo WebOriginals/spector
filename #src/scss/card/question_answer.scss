@@ -1,20 +1,19 @@
-.card-slider{
+.card-question_answer{
   padding: 45px 0;
 
   @include mq('tablet-wide') {
     padding: 75px 0;
   }
-
-  &-top{
-    display: flex;
-    flex-direction: column;
-    @include adaptive-value(margin-bottom,60,30,1);
+  &-header{
+    padding-bottom: 30px;
 
     @include mq('tablet-wide') {
-      flex-direction: row;
+      display: flex;
       align-items: center;
       gap: 30px;
+      padding-bottom: 60px;
     }
+
 
     &__title{
       @include mq('tablet-wide') {
@@ -29,21 +28,30 @@
         width: 270px;
       }
     }
-    &__nav{
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      gap: 30px;
-      @include maq('tablet-wide') {
-        display: none;
-      }
+  }
+  &__body{
+
+  }
+  &-el{
+    padding: 20px 0;
+    border-top: 1px solid #E5E5E5;
+
+    &:last-child{
+      border-bottom: 1px solid #E5E5E5;
     }
 
-  }
-  &__slider{
+    &__title{
+      font-weight: bold;
+      @include adaptive-font(22,16,1);
+      width: 100% !important;
+      &.open{
+        color: $color_3;
+      }
+    }
+    &__text{
 
+    }
   }
-  &__slide{
-    padding: 10px;
-  }
+
+
 }

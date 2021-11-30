@@ -1,4 +1,4 @@
-if(document.querySelector('.card-slider__slider')){
+if(document.querySelectorAll('.card-slider__slider').length > 0){
     document.querySelectorAll('.card-slider__slider').forEach((el) => {
         let body = el.parentElement.parentElement;
         let prev = body.querySelector('.card-slider-top__prevBtn');
