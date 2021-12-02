@@ -70,7 +70,11 @@ $fontFamily: 'Alegreya Sans', sans-serif;
 @import "card/question_answer";
 
 
-
+//basket
+@import "basket/grid";
+@import "basket/card";
+@import "basket/info";
+@import "basket/null";
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================

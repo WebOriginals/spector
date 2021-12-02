@@ -1,0 +1,117 @@
+.basket-grid-cards {
+
+  &-el {
+    display: grid;
+    &:not(:first-child){
+      @include adaptive-value(padding-top,30,20,1);
+    }
+    @include adaptive-value(padding-bottom,30,20,1);
+    border-bottom: 1px solid #E6E6E6;
+    grid-gap:5px 20px;
+    @include maq('tablet') {
+      grid-template-columns: 85px 1fr  28px 28px;
+      grid-template-areas: "img name name . "
+                         "img price  . . "
+                         "img quantity favarite delite";
+    }
+    @include maq('phone') {
+      grid-template-areas: "img name name . "
+                         "img price  price . "
+                         "img quantity favarite delite";
+    }
+    @include mq('tablet') {
+      &:last-child{
+        border-bottom: none;
+      }
+      grid-gap: 20px;
+      grid-template-columns: 85px 1fr 90px 1fr 28px 28px;
+      align-items: center;
+    }
+
+    &__img {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 84px;
+      height: 84px;
+      @include maq('tablet') {
+        grid-area: img;
+      }
+
+    }
+
+    &__name {
+      @include adaptive-font(18, 16, 1);
+      @include maq('tablet') {
+        grid-area: name;
+      }
+    }
+
+    &__quantity {
+      padding: 0;
+
+      @include maq('tablet') {
+        grid-area: quantity;
+        justify-content: start;
+      }
+
+      .card-info__minus, .card-info__plus {
+        background-color: #F2F2F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &__price {
+
+      display: flex;
+      justify-content: space-around;
+
+      @include maq('tablet') {
+        justify-content: start;
+        gap: 20px;
+        grid-area: price;
+        margin-bottom: 15px;
+      }
+      span {
+        &:nth-child(1) {
+          @include adaptive-font(18, 16, 1);
+          font-weight: bold;
+        }
+
+        &:nth-child(2) {
+          text-decoration: line-through;
+          color: #898989;
+        }
+      }
+    }
+
+    &__favarite {
+      cursor: pointer;
+      &:hover{
+      path{
+          fill: $color_3;
+        }
+      }
+      @include maq('tablet') {
+        grid-area: favarite;
+      }
+    }
+
+    &__delite {
+      cursor: pointer;
+      &:hover{
+      path{
+          fill: $color_3;
+        }
+      }
+      @include maq('tablet') {
+        grid-area: delite;
+      }
+    }
+  }
+}

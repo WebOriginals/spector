@@ -1,0 +1,11 @@
+.basket-grid{
+
+  &__body{
+    display: grid;
+    grid-gap: 60px;
+    @include mq('tablet-wide') {
+      grid-template-columns: 1fr 270px;
+      grid-gap: 120px;
+    }
+  }
+}

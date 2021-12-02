@@ -1,0 +1,20 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('Корзина')
+    body
+        .wrapper
+            include pug/_basic/_header
+            .page.main
+                +crumbs('Корзина')
+                +title('Корзина')
+                include pug/basket/grid
+                include pug/basket/null
+
+
+
+
+            include pug/_basic/_footer
+
+        include pug/_basic/_popup
+        include pug/_basic/_js
