@@ -1,0 +1,28 @@
+.main-blocks3{
+
+  &__body{
+
+    @include adaptive-value(padding,60,20,1);
+    display: grid;
+    grid-gap: 30px;
+    @include mq('tablet-wide') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &-el{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    @include adaptive-value(padding,30,15,1);
+    @include adaptive-value(height,580,330,1);
+
+    @include mq('tablet-small') {
+      @include adaptive-value(height,580,330,2);
+    }
+
+    &__name{
+      color: $color_1;
+    }
+  }
+}
