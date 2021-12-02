@@ -1,15 +1,17 @@
 include pug/mixins
 doctype html
 html(lang="ru")
-    +head('Корзина')
+    +head('Избранное')
     body
         .wrapper
             include pug/_basic/_header
             .page.main
-                +crumbs('Корзина')
-                +title('Корзина')
-                include pug/basket/grid
-                include pug/basket/null
+                +crumbs('Избранное')
+                +title('Избранное')
+                include pug/favourites/grid
+                include pug/card/slider
+
+
 
 
             include pug/_basic/_footer
