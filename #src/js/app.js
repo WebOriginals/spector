@@ -17,4 +17,5 @@
 @@include('files/sliders/pageCatalog-card.js')
 @@include('files/sliders/pageCard-duo.js')
 @@include('files/sliders/pageCard-slider.js')
+@@include('files/sliders/pageMain-first.js')
 //slider

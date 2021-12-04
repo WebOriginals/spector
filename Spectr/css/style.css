@@ -3110,6 +3110,10 @@ textarea.input {
   display: block;
 }
 
+.main-blocks3 {
+  padding: 45px 0;
+}
+
 .main-blocks3__body {
   padding: 60px;
   display: -ms-grid;
@@ -3128,6 +3132,179 @@ textarea.input {
 
 .main-blocks3-el__name {
   color: #FFFFFF;
+}
+
+.main-article {
+  padding: 45px 0;
+}
+
+.main-article-top__btn {
+  margin: auto;
+}
+
+.main-article-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+
+.main-article-grid-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  cursor: pointer;
+  color: #181818;
+}
+
+.main-article-grid-card__img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 2 50%;
+          flex: 1 2 50%;
+  height: 350px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-article-grid-card__descrip {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 2 50%;
+          flex: 1 2 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-article-grid-card__hashtags {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.main-article-grid-card__hashtags span {
+  padding: 5px 15px;
+  border: 1px solid #898989;
+  color: #898989;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.main-article-grid-card__title {
+  font-weight: 800;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.main-article-grid-card__more {
+  color: #EB8B55;
+  font-weight: 500;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.main-article-grid-card__more:hover {
+  color: #f0aa83;
+}
+
+.main-article-grid-card__more:hover path {
+  fill: #f0aa83;
+}
+
+.main-first {
+  padding: 0 15px;
+  margin-bottom: 45px;
+}
+
+.main-first__slider {
+  position: relative;
+}
+
+.main-first__slide {
+  height: calc(100vh - 140px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-first ._container {
+  height: 100%;
+}
+
+.main-first .main-first__body {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.main-first__title {
+  font-size: 180px;
+  font-weight: 700;
+}
+
+.main-first__text {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.main-first__pagination {
+  position: absolute;
+  z-index: 2;
+  bottom: 10px !important;
+  left: 10px !important;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.main-first__pagination .swiper-pagination-bullet {
+  color: #FFFFFF;
+  opacity: .5;
+  font-size: 18px;
+  background: none;
+  border: none;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.main-first__pagination .swiper-pagination-bullet-active {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.main-first__pagination .swiper-pagination-bullet-active:before {
+  content: '';
+  position: absolute;
+  right: calc(-100% - 20px);
+  top: 50%;
+  height: 2px;
+  width: 70px;
+  background: #FFFFFF;
 }
 
 .sliderTop {
@@ -4206,9 +4383,38 @@ textarea.input {
     padding: 10px 0 10px;
   }
 
+  .main-blocks3 {
+    padding: 75px 0;
+  }
+
   .main-blocks3__body {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-article {
+    padding: 75px 0;
+  }
+
+  .main-article-top__btn {
+    margin-left: auto;
+  }
+
+  .main-article-grid-card {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .main-article-grid-card:nth-child(2n) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+  .main-first {
+    padding: 0 60px;
+    margin-bottom: 75px;
   }
 
   .sliderTop {
@@ -4428,6 +4634,18 @@ textarea.input {
     width: 250px;
   }
 
+  .main-first__pagination {
+    grid-gap: 30px;
+    bottom: 50% !important;
+    -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+
+  .main-first__pagination .swiper-pagination-bullet-active:before {
+    right: calc(-100% - 70px);
+  }
+
   .gridGoods__body {
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
@@ -4437,6 +4655,12 @@ textarea.input {
 @media only screen and (min-width: 1440px) {
   .card-info__number {
     font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .main-first__slide {
+    height: 400px;
   }
 }
 
@@ -4490,6 +4714,50 @@ textarea.input {
 
   .main-blocks3-el {
     height: calc(330px + 250 * ((100vw - 320px) / 850));
+  }
+
+  .main-article-grid {
+    grid-gap: calc(60px + -30 * ((100vw - 320px) / 850));
+  }
+
+  .main-article-grid-card {
+    gap: calc(20px + 10 * ((100vw - 320px) / 850));
+  }
+
+  .main-article-grid-card__img {
+    height: calc(200px + 150 * ((100vw - 320px) / 850));
+  }
+
+  .main-article-grid-card__hashtags {
+    margin-bottom: calc(10px + 10 * ((100vw - 320px) / 850));
+  }
+
+  .main-article-grid-card__hashtags span {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 850));
+  }
+
+  .main-article-grid-card__title {
+    font-size: calc(18px + 8 * ((100vw - 320px) / 850));
+  }
+
+  .main-article-grid-card__more {
+    margin-top: calc(20px + 20 * ((100vw - 320px) / 850));
+  }
+
+  .main-first__title {
+    font-size: calc(40px + 140 * ((100vw - 320px) / 850));
+  }
+
+  .main-first__text {
+    font-size: calc(18px + 30 * ((100vw - 320px) / 850));
+  }
+
+  .main-first__pagination .swiper-pagination-bullet {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 850));
+  }
+
+  .main-first__pagination .swiper-pagination-bullet-active:before {
+    width: calc(20px + 50 * ((100vw - 320px) / 850));
   }
 
   .catalogFilter-body__middle-filter {

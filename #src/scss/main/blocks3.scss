@@ -1,5 +1,8 @@
 .main-blocks3{
-
+  padding: 45px 0;
+  @include mq('tablet-wide') {
+    padding: 75px 0;
+  }
   &__body{
 
     @include adaptive-value(padding,60,20,1);
