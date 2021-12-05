@@ -4,6 +4,7 @@
 @@include('files/bodyLook.js')
 @@include('files/select.js')
 @@include('files/map.js')
+@@include('files/spollers.js')
 
 //catalog
 @@include('files/filter.js')

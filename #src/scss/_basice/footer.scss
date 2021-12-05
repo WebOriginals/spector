@@ -1,0 +1,115 @@
+.footer{
+  background: #EEF3F7;
+  padding: 30px 0;
+
+  &-grid{
+    display: grid;
+    //grid-gap:30px;
+    @include mq('tablet-wide') {
+      grid-template-columns: repeat(5, auto);
+      grid-gap: 50px 30px;
+    }
+
+    &__el{
+      &:nth-child(-n + 4){
+        grid-row: span 2;
+      }
+      &:first-child,&:last-child{
+        display: grid;
+        grid-gap: 10px;
+      }
+
+      @include maq('tablet-wide') {
+        &:nth-child(n+2):nth-child(-n+5) {
+          padding: 20px 0;
+          border-top: 1px solid #DDE2E4;
+        }
+        &:nth-child(5) {
+          border-bottom: 1px solid #DDE2E4;
+        }
+        &:nth-child(1) {
+          margin-bottom: 30px;
+          display: grid;
+          justify-items: center;
+
+        }
+        &:nth-child(6) {
+          margin-top: 30px;
+          display: grid;
+          justify-items: center;
+        }
+
+      }
+
+      .dropDownList-hidden {
+        @include maq('tablet-wide') {
+          display: none;
+        }
+      }
+
+      .footer__menu{
+        display: grid;
+        grid-gap: 10px;
+        padding-top: 10px;
+      }
+    }
+  }
+  &__logo{
+    img{
+      max-width: 100%;
+    }
+  }
+  &__soc{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    @include adaptive-font(20,16,1);
+
+    @include mq('tablet-wide') {
+      padding: 20px 0;
+    }
+  }
+  &__polit{
+    a{
+      color: #898989;
+    }
+    text-decoration: underline;
+
+    @include mq('tablet-wide') {
+      padding: 20px 0 40px;
+    }
+  }
+  &__componi{
+    color: #898989 ;
+  }
+  &__labs{
+
+  }
+  &__title{
+    font-weight: 500;
+    @include adaptive-font(20,18,1);
+    @include mq('tablet-wide') {
+      pointer-events: none;
+      &:after{
+        content: none;
+      }
+    }
+  }
+  &__phone{
+    a{
+      color: #898989;
+    }
+    text-decoration: underline;
+  }
+  &__address{
+    color: #898989;
+  }
+  &__email{
+
+    text-decoration: underline;
+    a{
+      color: #898989;
+    }
+  }
+}
