@@ -1,0 +1,12 @@
+.contacts-map{
+  margin-top: 35px;
+  margin-bottom: 45px;
+  @include mq('tablet-wide') {
+    margin-bottom: 75px;
+  }
+
+  &__body{
+    width: 100%;
+    @include adaptive-value(height,450,200,1);
+  }
+}

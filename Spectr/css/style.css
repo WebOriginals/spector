@@ -3595,6 +3595,68 @@ textarea.input {
   text-decoration: line-through;
 }
 
+.contacts-top-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contacts-top-grid__el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contacts-top-grid__el span {
+  width: 100%;
+  color: #898989;
+  font-size: 16px;
+}
+
+.contacts-map {
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+
+.contacts-map__body {
+  width: 100%;
+  height: 450px;
+}
+
+.contacts-form {
+  padding: 45px 0;
+}
+
+.contacts-form__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+
+.contacts-form__body form {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px 30px;
+}
+
+.contacts-form__title {
+  margin-bottom: 30px;
+}
+
+.contacts-form p {
+  color: #898989;
+  margin-top: 10px;
+}
+
+.contacts-form__img img {
+  max-width: 100%;
+}
+
 @media only screen and (min-width: 370px) {
   .gridGoods__body {
     -ms-grid-columns: (1fr)[2];
@@ -4012,6 +4074,40 @@ textarea.input {
         -ms-transform: translateX(-80px);
             transform: translateX(-80px);
   }
+
+  .contacts-top-grid {
+    -ms-grid-columns: 1fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .contacts-map {
+    margin-bottom: 75px;
+  }
+
+  .contacts-form {
+    padding: 75px 0;
+  }
+
+  .contacts-form__grid {
+    -ms-grid-columns: 1.2fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .contacts-form__body form {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contacts-form p {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -4270,6 +4366,18 @@ textarea.input {
 
   .favourites-grid-el__price span:nth-child(1) {
     font-size: calc(16px + 2 * ((100vw - 320px) / 850));
+  }
+
+  .contacts-top-grid__el span {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 850));
+  }
+
+  .contacts-map__body {
+    height: calc(200px + 250 * ((100vw - 320px) / 850));
+  }
+
+  .contacts-form__title {
+    margin-bottom: calc(10px + 20 * ((100vw - 320px) / 850));
   }
 }
 

@@ -2,11 +2,11 @@
 @@include('files/checkDevice.js')
 @@include('files/menu.js')
 @@include('files/bodyLook.js')
-
 @@include('files/select.js')
+@@include('files/map.js')
+
 //catalog
 @@include('files/filter.js')
-
 @@include('files/priceSlider.js')
 
 

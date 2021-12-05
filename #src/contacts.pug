@@ -1,0 +1,20 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('Контакты')
+    body
+        .wrapper
+            include pug/_basic/_header
+            .page.main
+                +crumbs('Контакты')
+                +title('Контакты')
+                include pug/contacts/top
+                include pug/contacts/map
+                include pug/contacts/form
+
+
+
+            include pug/_basic/_footer
+
+        include pug/_basic/_popup
+        include pug/_basic/_js
