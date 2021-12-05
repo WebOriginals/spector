@@ -1,5 +1,7 @@
 @@include('../component/dropDownLlist/js/dropDownList.js')
 @@include('../component/dinamicAdaptiv/js/dinamicAdaptiv.js')
 @@include('../component/Quantity/js/quantity.js')
+@@include('../component/Modals/js/modal.js')
 @@include('libs/nouislider.js')
 @@include('libs/wNumb.min.js')
+@@include('libs/animation-input.js')

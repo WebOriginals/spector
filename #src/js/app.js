@@ -2,7 +2,7 @@
 @@include('files/checkDevice.js')
 @@include('files/menu.js')
 @@include('files/bodyLook.js')
-@@include('files/popup.js')
+
 @@include('files/select.js')
 //catalog
 @@include('files/filter.js')
