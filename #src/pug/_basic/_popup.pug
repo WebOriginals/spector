@@ -1,5 +1,6 @@
 a.popup-link(href='#popup_1') Товар добавлен в корзину
 a.popup-link(href='#popup_2') Отправить заявку
+a.popup-link(href='#popup_3') Спасибо
 
 .popup#popup_1
     .popup__body
@@ -108,15 +109,23 @@ a.popup-link(href='#popup_2') Отправить заявку
             p Нажав на кнопку, я даю согласие на обработку <a href="#">персональных данных</a>
             button.button-o Отправить
 
-
-
-
+.popup#popup_3
+    .popup__body
+        .popup__content
+            a.popup__close.close-popup
+                svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='18', height='18', viewbox='0 0 18 18')
+                    defs
+                        path#avzva(d='M691.485 160.07l-1.414 1.415-7.071-7.071-7.071 7.071-1.414-1.414 7.07-7.071-7.07-7.071 1.414-1.415 7.07 7.071 7.072-7.07 1.414 1.414-7.07 7.07z')
+                    g
+                        g(transform='translate(-674 -144)')
+                            use(fill='#000', xlink:href='#avzva')
+            .popup__title Товар добавлен в корзину
+            .popup__text Оставьте свои данные и наш специалист свяжется с вами в ближайшее время.
 
 .popup.popup_massagename-message
     .popup__content
         .popup__body
-            .popup__close
-
+            .popup__close.close-popup
 
 .popup.popup_video
     .popup__content

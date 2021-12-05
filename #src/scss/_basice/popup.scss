@@ -1,9 +1,14 @@
+
 .popup__title{
 	font-weight: bold;
 	@include adaptive-font(36,16,1);
 }
 .close-popup{
 	cursor: pointer;
+}
+
+.popup__content{
+	border-radius: 5px;
 }
 
 #popup_1{
