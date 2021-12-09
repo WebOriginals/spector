@@ -5,6 +5,7 @@
 @@include('files/select.js')
 @@include('files/map.js')
 @@include('files/spollers.js')
+@@include('files/teg_hideShow.js')
 
 //catalog
 @@include('files/filter.js')

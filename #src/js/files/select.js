@@ -1,9 +1,10 @@
 //Select
 let selects = document.getElementsByTagName('select');
+
 if (selects.length > 0) {
         selects_init();
-
 }
+
 let _slideUp = (target, duration = 500) => {
     target.style.transitionProperty = 'height, margin, padding';
     target.style.transitionDuration = duration + 'ms';
@@ -28,6 +29,7 @@ let _slideUp = (target, duration = 500) => {
         target.classList.remove('_slide');
     }, duration);
 }
+
 let _slideDown = (target, duration = 500) => {
     target.style.removeProperty('display');
     let display = window.getComputedStyle(target).display;
@@ -58,6 +60,7 @@ let _slideDown = (target, duration = 500) => {
         target.classList.remove('_slide');
     }, duration);
 }
+
 let _slideToggle = (target, duration = 500, event) => {
     if (!target.classList.contains('_slide')) {
         if(event.target.closest('.serch-option'))
@@ -70,6 +73,7 @@ let _slideToggle = (target, duration = 500, event) => {
         }
     }
 }
+
 function selects_init() {
     for (let index = 0; index < selects.length; index++) {
         const select = selects[index];
@@ -120,6 +124,7 @@ function select_init(select) {
 
     select_item(select);
 }
+
 function hasClassedParent(el, cssClass) {
     if(el.parentNode && el.parentNode.tagName !== 'BODY') {
       if(el.parentNode.classList.contains(cssClass)) {
@@ -131,6 +136,7 @@ function hasClassedParent(el, cssClass) {
       return null;
     }
   }
+
 function select_item(select) {
     const select_parent = select.parentElement;
     const select_items = select_parent.querySelector('.select__item');

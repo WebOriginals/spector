@@ -1,0 +1,19 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('Статьи')
+    body
+        .wrapper
+            include pug/_basic/_header
+            .page.main
+                +crumbs('Статьи')
+                +title('Статьи')
+                include pug/articles/teg
+
+
+
+
+            include pug/_basic/_footer
+
+        include pug/_basic/_popup
+        include pug/_basic/_js

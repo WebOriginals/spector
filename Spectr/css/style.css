@@ -3815,6 +3815,98 @@ textarea.input {
   max-width: 100%;
 }
 
+.articles-teg__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 22px;
+}
+
+.articles-teg__top > span {
+  color: #898989;
+  font-weight: 800;
+}
+
+.articles-teg__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.articles-teg__buttons span {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.articles-teg__buttons span.active,
+.articles-teg__buttons span:hover {
+  color: #EB8B55;
+}
+
+.articles-teg .select_categories {
+  width: 100%;
+  font-weight: 800;
+}
+
+.articles-teg .select_categories .select__title,
+.articles-teg .select_categories .select__options {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.articles-teg__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.articles-teg__bottom.height {
+  height: 40px;
+}
+
+.articles-teg__bottom span {
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 1px solid #898989;
+  color: #898989;
+  cursor: pointer;
+}
+
+.articles-teg__bottom span.hiden {
+  display: none;
+}
+
+.articles-teg__bottom span:hover {
+  border: 1px solid #EB8B55;
+  color: #EB8B55;
+}
+
+.articles-teg__button {
+  margin-top: 20px;
+  width: 100%;
+  border-top: 1px solid #E5E5E5;
+  padding-top: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.articles-teg__button.active svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 @media only screen and (min-width: 370px) {
   .gridGoods__body {
     -ms-grid-columns: (1fr)[2];
@@ -4306,6 +4398,10 @@ textarea.input {
     -ms-grid-column-span: 2;
     grid-column: span 2;
   }
+
+  .articles-teg .select_categories {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -4597,6 +4693,10 @@ textarea.input {
   .contacts-form__title {
     margin-bottom: calc(10px + 20 * ((100vw - 320px) / 850));
   }
+
+  .articles-teg__top {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 850));
+  }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -4845,6 +4945,10 @@ textarea.input {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+
+  .articles-teg__buttons {
+    display: none;
   }
 }
 
