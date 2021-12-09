@@ -19,4 +19,5 @@
 @@include('files/sliders/pageCard-duo.js')
 @@include('files/sliders/pageCard-slider.js')
 @@include('files/sliders/pageMain-first.js')
+@@include('files/sliders/pageMain-insta.js')
 //slider
