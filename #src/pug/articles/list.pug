@@ -1,0 +1,16 @@
+include ./../../pug/mixins
+section.articles-lists
+    ._container
+        .articles-lists__grid.articles-lists-grid
+            +articleCard()
+            +articleCard()
+            +articleCard()
+            +articleCard()
+            +articleCard()
+            +articleCard()
+            +articleCard()
+            +articleCard()
+            +articleCard()
+
+        .articles-lists__pagination
+            include ./.././../pug/_basic/_pagination

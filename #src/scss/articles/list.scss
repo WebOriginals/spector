@@ -1,0 +1,125 @@
+.articles-lists {
+  padding: 30px 0;
+  @include mq('tablet') {
+    padding: 30px 0 75px;
+  }
+
+  &-grid {
+    display: grid;
+    grid-gap: 60px 30px;
+    @include mq('tablet') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    &-card {
+      position: relative;
+      cursor: pointer;
+
+      &:hover{
+        .articles-lists-grid-card__title{
+          color: $color_3;
+        }
+      }
+
+      &:nth-child(-n+2) {
+        display: flex;
+        @include adaptive-value(gap, 30, 20, 1);
+        flex-wrap: wrap;
+        cursor: pointer;
+        color: $color_2;
+
+        @include mq('tablet-wide') {
+          grid-column: span 3;
+          flex-wrap: nowrap;
+          &:nth-child(2n) {
+            flex-direction: row-reverse;
+          }
+        }
+      }
+
+      display: grid;
+      grid-gap: 10px;
+
+      &:nth-child(n+3) {
+
+        @include mq('tablet-wide') {
+          .articles-lists-grid-card__img{
+            margin-bottom: 10px;
+          }
+          .articles-lists-grid-card__hashtags{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+          }
+        }
+      }
+
+
+      &__img {
+        flex: 1 2 50%;
+        @include adaptive-value(height, 350, 200, 1);
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &__descrip {
+        flex: 1 2 50%;
+        align-self: center;
+      }
+
+      &__hashtags {
+        @include adaptive-value(margin-bottom, 20, 10, 1);
+        display: flex;
+        gap: 10px;
+
+        span {
+          background-color: $color_1;
+          padding: 5px 15px;
+          border: 1px solid #898989;
+          color: #898989;
+          border-radius: 30px;
+          @include adaptive-font(14, 12, 1);
+        }
+
+      }
+
+      &__title {
+        font-weight: 800;
+        @include adaptive-font(26, 18, 1);
+        margin-bottom: 10px;
+      }
+
+      &__more {
+        color: $color_3;
+        font-weight: 500;
+        @include adaptive-value(margin-top, 40, 20, 1);
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+          color: lighten($color_3, 10);
+
+          path {
+            fill: lighten($color_3, 10);
+          }
+        }
+      }
+    }
+  }
+
+  &__pagination{
+    padding-top: 30px;
+    @include maq('tablet') {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+    @include mq('tablet') {
+      display: flex;
+      justify-content: end;
+    }
+  }
+}

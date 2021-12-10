@@ -1,0 +1,84 @@
+.articles-email {
+  padding: 45px 0;
+  @include mq('tablet-wide') {
+    padding: 75px 0;
+  }
+
+  &__body {
+    display: grid;
+    grid-gap: 60px;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @include mq('tablet-wide') {
+      padding: 0 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  form {
+    color: $color_1;
+    display: grid;
+    grid-gap: 10px 30px;
+
+    @include mq('tablet-wide') {
+      grid-template-columns: 1fr auto;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    @include adaptive-font(26, 18, 1);
+    font-weight: 800;
+    @include mq('tablet-wide') {
+      grid-column: span 2;
+    }
+
+  }
+
+  &__text {
+    @include mq('tablet-wide') {
+      grid-column: span 2;
+    }
+  }
+
+  button {
+    @include maq('tablet-wide') {
+      margin-left: auto;
+    }
+
+  }
+
+  &__img {
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .input--hoshi {
+
+
+    .input__label-content, .input__field {
+      color: $color_1;
+    }
+  }
+}

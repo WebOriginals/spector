@@ -1,11 +1,12 @@
 .articles-teg {
+  padding: 0 0 30px;
 
   &__top {
     display: flex;
     gap: 20px;
     align-items: center;
     width: 100%;
-    @include adaptive-font(22,16,1);
+    @include adaptive-font(22, 16, 1);
 
     & > span {
       color: #898989;
@@ -22,11 +23,11 @@
     }
 
 
-
     span {
       font-weight: 800;
       cursor: pointer;
-      &.active,&:hover{
+
+      &.active, &:hover {
         color: $color_3;
       }
     }
@@ -35,7 +36,7 @@
   .select_categories {
     width: 100%;
     font-weight: 800;
-    
+
     .select__title, .select__options {
       padding-right: 10px;
       padding-left: 10px;
@@ -46,36 +47,36 @@
     }
   }
 
-  &__bottom{
+  &__bottom {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 30px;
     overflow: hidden;
 
-    &.height{
+    &.height {
       height: 40px;
     }
 
-    span{
+    span {
       padding: 5px 10px;
       border-radius: 50px;
       border: 1px solid #898989;
       color: #898989;
       cursor: pointer;
 
-      &.hiden{
+      &.hiden {
         display: none;
       }
 
-      &:hover{
+      &:hover {
         border: 1px solid $color_3;
         color: $color_3;
       }
     }
   }
 
-  &__button{
+  &__button {
     margin-top: 20px;
     width: 100%;
     border-top: 1px solid #E5E5E5;
@@ -84,9 +85,8 @@
     cursor: pointer;
 
 
-
-    &.active{
-      svg{
+    &.active {
+      svg {
         transform: rotate(180deg);
       }
     }

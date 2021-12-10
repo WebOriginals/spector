@@ -1,0 +1,19 @@
+section.articles-email
+    ._container
+        .articles-email__body
+            .articles-email__bg
+                picture
+                    source(srcset='img/articles-min.png' type='image/png' media="(max-width: 600px)")
+                    source(srcset='img/articles.png' type='image/png' media="(min-width: 600px)")
+                    img(src='img/articles.png' alt='Картинка')
+            form
+                .articles-email__title Хотите читать интересные статьи каждую неделю?
+                .articles-email__text Подпишитесь на нашу рассылку.
+                span.input.input--hoshi
+                    input#input-2.input__field.input__field--hoshi(type='text')
+                    label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-2')
+                        span.input__label-content.input__label-content--hoshi E-mail*
+
+                button.button-o Подписаться
+            .articles-email__img
+                img(src="img/articles.svg")
