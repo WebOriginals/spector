@@ -2598,6 +2598,9 @@ textarea.input {
 
 .main-article-top__btn {
   margin: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .main-article-grid {
@@ -4261,6 +4264,81 @@ textarea.input {
           justify-content: center;
 }
 
+.design_ideas-articles {
+  padding: 30px 0 45px;
+}
+
+.design_ideas-articles__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+
+.design_ideas-articles__grid .articles-lists-grid-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  cursor: pointer;
+  color: #181818;
+}
+
+.design_ideas-articles__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+}
+
+.design_ideas-project {
+  padding: 45px 0;
+}
+
+.design_ideas-project__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+
+.design_ideas-project__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+}
+
+.design-ideas-video {
+  padding: 45px 0;
+}
+
+.design-ideas-video__top .video-other__subscribe {
+  padding-top: 0;
+}
+
+.design-ideas-video__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+
+.design-ideas-video__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+}
+
 @media only screen and (min-width: 370px) {
   .gridGoods__body {
     -ms-grid-columns: (1fr)[2];
@@ -4422,6 +4500,16 @@ textarea.input {
   }
 
   .video-list-grid {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .design_ideas-project__grid {
+    -ms-grid-columns: (1fr)[12];
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .design-ideas-video__grid {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
@@ -4909,21 +4997,51 @@ textarea.input {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .design_ideas-articles {
+    padding: 30px 0 75px;
+  }
+
+  .design_ideas-articles__grid .articles-lists-grid-card {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .design_ideas-articles__grid .articles-lists-grid-card:nth-child(2n) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+  .design_ideas-project {
+    padding: 75px 0;
+  }
+
+  .design-ideas-video {
+    padding: 75px 0;
+  }
+
+  .design-ideas-video__grid {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .design-ideas-video__grid .video-list-grid-block:nth-child(6n+1),
+  .design-ideas-video__grid .video-list-grid-block:nth-child(6n-1) {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
+    height: 100%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .header {
     padding: 20px 60px;
-  }
-
-  .header-body {
-    grid-gap: 130px;
-    -ms-grid-columns: 253px 1fr;
-    grid-template-columns: 253px 1fr;
-  }
-
-  .header-body__logo {
-    width: 250px;
   }
 
   .main-first__pagination {
@@ -4941,6 +5059,18 @@ textarea.input {
   .gridGoods__body {
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .header-body {
+    grid-gap: 130px;
+    -ms-grid-columns: 253px 1fr;
+    grid-template-columns: 253px 1fr;
+  }
+
+  .header-body__logo {
+    width: 250px;
   }
 }
 
@@ -5271,6 +5401,14 @@ textarea.input {
 
   .video-basic-body-bottom__hashtags span {
     font-size: calc(12px + 2 * ((100vw - 320px) / 850));
+  }
+
+  .design_ideas-articles__grid {
+    grid-gap: calc(60px + -30 * ((100vw - 320px) / 850));
+  }
+
+  .design_ideas-articles__grid .articles-lists-grid-card {
+    gap: calc(20px + 10 * ((100vw - 320px) / 850));
   }
 }
 
@@ -5784,6 +5922,18 @@ textarea.input {
 
   .articles-email button {
     margin-left: auto;
+  }
+
+  .design_ideas-articles__btn {
+    display: none;
+  }
+
+  .design_ideas-project__btn {
+    display: none;
+  }
+
+  .design-ideas-video__btn {
+    display: none;
   }
 }
 

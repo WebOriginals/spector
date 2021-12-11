@@ -1,0 +1,23 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('Идеи дизайна')
+    body
+        .wrapper
+            include pug/_basic/_header
+            .page.main
+                +crumbs('Идеи дизайна')
+                +title('Идеи дизайна')
+                include pug/articles/teg
+                include pug/design_ideas/articles
+                include pug/design_ideas/project
+                include pug/design_ideas/video
+                include pug/articles/email
+
+
+
+
+            include pug/_basic/_footer
+
+        include pug/_basic/_popup
+        include pug/_basic/_js
