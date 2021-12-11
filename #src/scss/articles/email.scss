@@ -12,6 +12,10 @@
     border-radius: 10px;
     overflow: hidden;
 
+    @include mq('tablet') {
+      padding: 0 30px;
+      grid-template-columns: 1.2fr 1fr;
+    }
     @include mq('tablet-wide') {
       padding: 0 30px;
       grid-template-columns: 1fr 1fr;
@@ -38,7 +42,7 @@
     display: grid;
     grid-gap: 10px 30px;
 
-    @include mq('tablet-wide') {
+    @include mq('tablet') {
       grid-template-columns: 1fr auto;
       align-content: center;
       justify-content: center;
@@ -48,21 +52,25 @@
   &__title {
     @include adaptive-font(26, 18, 1);
     font-weight: 800;
-    @include mq('tablet-wide') {
+    @include mq('tablet') {
       grid-column: span 2;
     }
 
   }
 
   &__text {
-    @include mq('tablet-wide') {
+    @include mq('tablet') {
       grid-column: span 2;
     }
   }
 
   button {
-    @include maq('tablet-wide') {
+    @include maq('tablet') {
       margin-left: auto;
+    }
+    @include mq('tablet') {
+      margin-top: auto;
+      margin-bottom: 10px;
     }
 
   }

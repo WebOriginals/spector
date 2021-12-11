@@ -1,0 +1,21 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('Проекты')
+    body
+        .wrapper
+            include pug/_basic/_header
+            .page.main
+                +crumbs('Проекты')
+                +title('Проекты')
+                include pug/articles/teg
+                include pug/project/list
+                include pug/articles/email
+
+
+
+
+            include pug/_basic/_footer
+
+        include pug/_basic/_popup
+        include pug/_basic/_js

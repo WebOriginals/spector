@@ -5,6 +5,8 @@ mixin head(title)
         meta(name='format-detection' content='telephone=no')
         link(rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css")
         link(rel='stylesheet', href='https://unpkg.com/leaflet@1.7.1/dist/leaflet.css', integrity='sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==', crossorigin='')
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css")
+        script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js")
         script(src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js', integrity='sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==', crossorigin='')
         link(href='https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap', rel='stylesheet')
         link(rel='stylesheet' href='css/style.min.css')
@@ -91,3 +93,22 @@ mixin articleCard()
                     path(fill-rule='evenodd', clip-rule='evenodd', d='M1.92396e-05 5.60873C1.92197e-05 5.15309 0.365771 4.78373 0.816949 4.78373L25.2578 4.78373L22.5524 1.33756C22.2721 0.980516 22.3315 0.461613 22.685 0.178551C23.0386 -0.104509 23.5524 -0.0445386 23.8327 0.312501L28 5.62082L23.821 10.7021C23.5327 11.0526 23.0177 11.1007 22.6706 10.8096C22.3235 10.5185 22.2758 9.99838 22.5641 9.64787L25.2075 6.43372L0.816949 6.43372C0.365771 6.43372 1.92595e-05 6.06436 1.92396e-05 5.60873Z', fill='#EB8B55')
 
 
+
+//project
+//project card
+mixin projectCard()
+    a.project-list-grid__block.project-list-grid-block(href="#" style="background-image: url('img/project/project_1.png');")
+        .project-list-grid-block__title Уникальная кваритира в современном стиле
+        .project-list-grid-block__hashtags
+            span Квартира
+            span Дом
+
+//video
+//video card
+mixin videoCard()
+    a.video-list-grid__block.video-list-grid-block(href="#" style="background-image: url('img/project/project_1.png');")
+        .video-list-grid-block__icon
+            svg(width='58', height='58', viewbox='0 0 58 58', fill='none', xmlns='http://www.w3.org/2000/svg')
+                path(d='M29 0C13.0084 0 0 13.0097 0 29C0 44.9903 13.0084 58 29 58C44.9916 58 58 44.9903 58 29C58 13.0097 44.9916 0 29 0ZM40.5287 30.016L23.6121 40.891C23.4139 41.0196 23.1849 41.0834 22.9584 41.0834C22.7601 41.0834 22.5595 41.0338 22.3802 40.9359C21.9907 40.7235 21.75 40.3175 21.75 39.875V18.125C21.75 17.6825 21.9907 17.2765 22.3802 17.0641C22.7625 16.8541 23.2416 16.867 23.6121 17.109L40.5287 27.984C40.8733 28.2058 41.0834 28.5894 41.0834 29C41.0834 29.4106 40.8733 29.7941 40.5287 30.016Z', fill='white')
+
+        .video-list-grid-block__title Колоритная квартира в современном стиле

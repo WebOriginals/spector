@@ -97,4 +97,12 @@ $fontFamily: 'Alegreya Sans', sans-serif;
 @import "articles/list";
 @import "articles/email";
 
+//project
+@import "project/list";
+
+//video
+@import "video/list";
+@import "video/basic";
+@import "video/other";
+
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================

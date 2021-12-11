@@ -14,6 +14,7 @@
 
 
 //slider
+@@include('files/sliders/createSliders.js')
 @@include('files/sliders/first.js')
 @@include('files/sliders/pageCatalog-top.js')
 @@include('files/sliders/pageCatalog-card.js')
@@ -21,4 +22,5 @@
 @@include('files/sliders/pageCard-slider.js')
 @@include('files/sliders/pageMain-first.js')
 @@include('files/sliders/pageMain-insta.js')
+@@include('files/sliders/pageVideo-other.js')
 //slider

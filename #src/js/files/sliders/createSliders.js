@@ -1,6 +1,6 @@
-if(document.querySelector('.comfort')) {
+if(document.querySelector('.video-other__slider')) {
     if (window.screen.width < 767) {
-        let comfort = document.querySelector('.comfort__slider');
+        let comfort = document.querySelector('.video-other__slider');
         comfort.classList.add('_swiper');
     }
 }

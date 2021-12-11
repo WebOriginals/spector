@@ -1,0 +1,21 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('Видео-идеи')
+    body
+        .wrapper
+            include pug/_basic/_header
+            .page.main
+                +crumbs('Видео-идеи')
+                +title('КОЛОРИТНАЯ КВАРТИРА В СОВРЕМЕННОМ СТИЛЕ')
+                include pug/video/basic
+                include pug/video/other
+                include pug/articles/email
+
+
+
+
+            include pug/_basic/_footer
+
+        include pug/_basic/_popup
+        include pug/_basic/_js

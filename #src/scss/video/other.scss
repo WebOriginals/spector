@@ -1,0 +1,27 @@
+.video-other {
+  padding: 45px 0;
+  @include mq('tablet-wide') {
+    padding: 75px 0;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__slider {
+
+    @include mq('tablet-wide') {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__subscribe {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+}
