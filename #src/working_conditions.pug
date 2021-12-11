@@ -1,0 +1,20 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('Условия работы')
+    body
+        .wrapper
+            include pug/_basic/_header
+            .page.main
+                +crumbs('Условия работы')
+                +title('Условия работы')
+                include pug/working_conditions/grid
+                include pug/contacts/form
+
+
+
+
+            include pug/_basic/_footer
+
+        include pug/_basic/_popup
+        include pug/_basic/_js

@@ -1,0 +1,45 @@
+.working-conditions-list{
+  padding: 0 0 45px;
+  @include mq('tablet-wide') {
+    padding: 0 0 75px;
+  }
+
+  &-grid{
+    display: grid;
+    grid-gap: 60px;
+
+    &-block{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      @include mq('tablet-wide') {
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+      }
+
+      &__text{
+        @include mq('tablet-wide') {
+          flex: 0 1 47%;
+
+        }
+        .h2{
+          margin-bottom: 10px;
+        }
+        p{
+
+        }
+
+      }
+      &__img{
+        @include mq('tablet-wide') {
+          flex: 0 1 auto;
+        }
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
