@@ -6,7 +6,7 @@
 
   &__top{
     .video-other__subscribe{
-      padding-top: 0;
+      padding-top: 0 ;
     }
   }
   &__grid{
@@ -18,6 +18,9 @@
     }
     @include mq('tablet-wide') {
       grid-template-columns: repeat(3, 1fr);
+    }
+    .video-other__subscribe{
+      padding-top: 0;
     }
     .video-list-grid-block{
       @include mq('tablet-wide') {
@@ -34,7 +37,7 @@
     display: flex;
     justify-content: center;
     padding-top: 60px;
-    @include maq('tablet') {
+    @include maq('tablet-wide') {
       display: none;
     }
   }

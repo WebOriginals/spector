@@ -12,12 +12,19 @@
     @include mq('tablet') {
       grid-template-columns: repeat(12,1fr);
     }
+    @include mq('tablet-wide') {
+      grid-template-columns: repeat(12,1fr);
+    }
+    .main-article-top__btn{
+      grid-column: span 12;
+    }
   }
   &__btn{
     display: flex;
     justify-content: center;
     padding-top: 60px;
-    @include maq('tablet') {
+
+    @include maq('tablet-wide') {
       display: none;
     }
   }

@@ -11,6 +11,10 @@
     display: grid;
     @include adaptive-value(grid-gap, 30, 60, 1);
 
+    @media only screen and (min-width: 450px) and (max-width: 769px){
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .articles-lists-grid-card {
       display: flex;
       @include adaptive-value(gap, 30, 20, 1);
@@ -26,13 +30,17 @@
         }
       }
     }
+
+    .main-article-top__btn{
+      grid-column: span 2;
+    }
   }
 
   &__btn{
     display: flex;
     justify-content: center;
     padding-top: 60px;
-    @include maq('tablet') {
+    @include maq('tablet-wide') {
       display: none;
     }
   }
