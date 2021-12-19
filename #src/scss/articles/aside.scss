@@ -1,0 +1,117 @@
+.articles-aside{
+
+  &-body{
+    display: grid;
+    grid-gap: 60px;
+
+    &-articles{
+      min-width: 0;
+      position: relative;
+
+      &__title{
+        margin-bottom: 30px;
+      }
+      &__grid{
+        @include mq('tablet-wide') {
+          display: grid;
+          grid-gap: 30px;
+        }
+      }
+      &__el{
+        &:hover{
+          color: $color_3;
+        }
+      }
+      &__img{
+        @include adaptive-value(height,164,180,1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      &__text{
+        font-weight: bold;
+      }
+    }
+
+    &-project{
+      min-width: 0;
+      position: relative;
+
+      &__title{
+        margin-bottom: 30px;
+      }
+      &__el{
+        display: block;
+        @include adaptive-value(height,200,230,1);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        border-radius: 5px;
+
+        &:hover{
+          .articles-aside-body-project__text{
+            color: $color_3;
+          }
+        }
+      }
+      &__text{
+        font-weight: bold;
+        color: $color_1;
+      }
+      &__grid{
+        @include mq('tablet-wide') {
+          display: grid;
+          grid-gap: 30px;
+        }
+      }
+    }
+
+    &-video{
+      min-width: 0;
+      position: relative;
+
+      &__title{
+        margin-bottom: 30px;
+      }
+      &__el{
+        position: relative;
+        display: grid;
+        @include adaptive-value(height,200,230,1);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        border-radius: 5px;
+        align-content: flex-end;
+
+        &:hover{
+          .articles-aside-body-project__text{
+            color: $color_3;
+          }
+        }
+      }
+      &__text{
+        font-weight: bold;
+        color: $color_1;
+      }
+      &__grid{
+        @include mq('tablet-wide') {
+          display: grid;
+          grid-gap: 30px;
+        }
+      }
+      &__ic{
+        position: absolute;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+      }
+    }
+
+  }
+}
+.three{
+
+}

@@ -4,6 +4,24 @@ if(document.querySelector('.video-other__slider')) {
         comfort.classList.add('_swiper');
     }
 }
+if(document.querySelector('.articles-aside-body-project__grid')) {
+    if (window.screen.width < 900) {
+        let comfort = document.querySelector('.articles-aside-body-project__grid');
+        comfort.classList.add('_swiper');
+    }
+}
+if(document.querySelector('.articles-aside-body-articles__grid')) {
+    if (window.screen.width < 900) {
+        let comfort = document.querySelector('.articles-aside-body-articles__grid');
+        comfort.classList.add('_swiper');
+    }
+}
+if(document.querySelector('.articles-aside-body-video__grid')) {
+    if (window.screen.width < 900) {
+        let comfort = document.querySelector('.articles-aside-body-video__grid');
+        comfort.classList.add('_swiper');
+    }
+}
 if(document.querySelector('._swiper')) {
 //BildSlider
     let sliders = document.querySelectorAll('._swiper');

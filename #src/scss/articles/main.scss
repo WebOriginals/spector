@@ -1,0 +1,25 @@
+.articles_internal {
+  display: grid;
+  grid-gap: 30px;
+
+  @include mq('tablet-wide') {
+    grid-template-columns: 1fr 270px;
+  }
+}
+
+.articles-main {
+  &-body {
+
+    &__text {
+      padding: 20px 0;
+    }
+
+    &__img {
+      padding: 20px 0;
+      width: 100%;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

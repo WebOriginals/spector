@@ -1,0 +1,25 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('Минимализм как стиль жизни: с чего начать знакомство')
+    body
+        .wrapper
+            include pug/_basic/_header
+            .page
+
+                .internal(style='background-image: url("img/project/project_1.png");')
+                    +crumbs('Минимализм как стиль жизни: с чего начать знакомство')
+                    +title('Минимализм как стиль жизни: с чего начать знакомство')
+                ._container
+                    .articles_internal
+                        include pug/articles/main
+                        include pug/articles/aside
+                include pug/articles/email
+
+
+
+
+            include pug/_basic/_footer
+
+        include pug/_basic/_popup
+        include pug/_basic/_js

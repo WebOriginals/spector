@@ -1,0 +1,458 @@
+<!--catalog-->
+<!--catalog  sliderTop-->
+<!--catalog selected filters-->
+<!--article-->
+<!--article card-->
+<!--project-->
+<!--project card-->
+<!--video-->
+<!--video card-->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Минимализм как стиль жизни: с чего начать знакомство</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" /><!-- <meta name="robots" content="noindex, nofollow">-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__body header-body">
+                <div class="menu__icon"><span></span></div>
+                <div class="header-body__logo">
+                    <picture>
+                        <source srcset="img/logo.svg" type="image/webp"><img src="img/logo.svg" alt="Картинка">
+                    </picture>
+                </div>
+                <nav class="header-body__nav header-body-nav menu">
+                    <div class="menu__body">
+                        <ul class="header-body-nav__top menu__list">
+                            <li><a href="#">Условия работы</a></li>
+                            <li><a href="#">Комплектация дизайн-проектов</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li class="mobile-hide-menu"><a href="tel:+7 (918) 100-888-6">+7 (918) 100-888-6</a></li>
+                            <li class="mobile-hide-menu"><a href="#">Заказать звонок</a></li>
+                        </ul>
+                        <ul class="header-body-nav__bottom menu__list">
+                            <li><a class="menu__link" href="#">Свет</a><span class="menu__arrow"></span>
+                                <ul class="menu__sub-list">
+                                    <li><a class="menu__sub-link-title" href="#"><img src="img/icons/sub-menu-l.svg" alt="">
+                                            <div class="name">Свет</div>
+                                        </a></li>
+                                    <li><a class="menu__sub-link" href="#"><img src="img/menu1.png" alt="">
+                                            <div class="name">Люстры</div>
+                                        </a></li>
+                                    <li><a class="menu__sub-link" href="#"><img src="img/menu2.png" alt="">
+                                            <div class="name">Подвесные</div>
+                                        </a></li>
+                                    <li><a class="menu__sub-link" href="#"><img src="img/menu3.png" alt="">
+                                            <div class="name">Потолочные</div>
+                                        </a></li>
+                                    <li><a class="menu__sub-link" href="#"><img src="img/menu4.png" alt="">
+                                            <div class="name">Настенные</div>
+                                        </a></li>
+                                    <li><a class="menu__sub-link" href="#"><img src="img/menu1.png" alt="">
+                                            <div class="name">Люстры</div>
+                                        </a></li>
+                                    <li><a class="menu__sub-link" href="#"><img src="img/menu2.png" alt="">
+                                            <div class="name">Подвесные</div>
+                                        </a></li>
+                                    <li><a class="menu__sub-link" href="#"><img src="img/menu3.png" alt="">
+                                            <div class="name">Потолочные</div>
+                                        </a></li>
+                                    <li><a class="menu__sub-link" href="#"><img src="img/menu4.png" alt="">
+                                            <div class="name">Настенные</div>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li><a class="menu__link" href="#">Стулья</a></li>
+                            <li><a class="menu__link" href="#">Столы</a></li>
+                            <li><a class="menu__link" href="#">Идеи дизайна</a></li>
+                            <li class="mobile-hide-menu"><a href="#"><svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M29.8172 28.9332L20.6898 19.8058C22.5847 17.7009 23.7498 14.9259 23.7498 11.8759C23.7498 5.32844 18.4223 0.000976562 11.8748 0.000976562C5.32741 0.000976562 0 5.32844 0 11.8759C0 18.4233 5.32747 23.7508 11.8749 23.7508C14.9249 23.7508 17.6998 22.5858 19.8048 20.6896L28.9323 29.817C29.0548 29.9395 29.2147 30.0007 29.3748 30.0007C29.5348 30.0007 29.6947 29.9395 29.8172 29.8182C30.0609 29.5732 30.0609 29.1782 29.8172 28.9332ZM11.8749 22.5008C6.01623 22.5008 1.25003 17.7346 1.25003 11.8759C1.25003 6.01727 6.01617 1.251 11.8749 1.251C17.7336 1.251 22.4998 6.01721 22.4998 11.8759C22.4998 17.7346 17.7336 22.5008 11.8749 22.5008Z" fill="black"></path>
+                                        <clippath id="clip0_170_80">
+                                            <rect width="30" height="30" fill="white"></rect>
+                                        </clippath>
+                                    </svg></a></li>
+                            <li class="mobile-hide-menu"><a href="#"><svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.1875 1.25C18.8599 1.25 16.1115 4.34082 15 5.79957C13.8885 4.34082 11.1401 1.25 7.81248 1.25C3.50467 1.25 0 5.21059 0 10.0781C0 12.7338 1.0541 15.2087 2.89916 16.9025C2.926 16.9489 2.95898 16.9916 2.99742 17.0301L14.5587 28.5675C14.6808 28.689 14.8401 28.75 15 28.75C15.1599 28.75 15.3198 28.689 15.4419 28.5669L27.3877 16.6254L27.511 16.5058C27.6087 16.4136 27.7051 16.3202 27.8131 16.2006C27.8583 16.1561 27.8955 16.106 27.9242 16.0517C29.2639 14.411 30 12.2949 30 10.0781C30 5.21059 26.4954 1.25 22.1875 1.25ZM26.8842 15.3485C26.8671 15.3687 26.8512 15.39 26.8372 15.412C26.7786 15.4791 26.7145 15.5383 26.651 15.5988L14.9994 27.2418L4.02346 16.2879C3.98807 16.2182 3.93861 16.1548 3.8782 16.1017C2.20764 14.6429 1.24998 12.4475 1.24998 10.0781C1.24998 5.89965 4.19373 2.50004 7.81248 2.50004C11.3904 2.50004 14.4439 7.1668 14.4745 7.21379C14.7052 7.57021 15.2948 7.57021 15.5255 7.21379C15.5561 7.1668 18.6096 2.50004 22.1875 2.50004C25.8063 2.50004 28.75 5.89971 28.75 10.0781C28.75 12.0471 28.0871 13.9191 26.8842 15.3485Z" fill="#181818"></path>
+                                    </svg></a></li>
+                            <li class="mobile-hide-menu"><a href="#"><svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.7597 7.70684C25.7323 7.38203 25.4587 7.13315 25.1326 7.13634H20.3667V5.33027C20.3667 2.38637 17.9801 0 15.0365 0C12.0926 0 9.70621 2.38637 9.70621 5.33027V7.13634H4.94032C4.61576 7.13756 4.34483 7.38399 4.31323 7.70684L2.67031 26.595C2.59559 27.4707 2.8915 28.3379 3.4865 28.9853C4.08126 29.6325 4.92024 30.0006 5.79939 29.9999H24.2797C25.1588 30.0006 25.9978 29.6325 26.5926 28.9853C27.1876 28.3379 27.4837 27.4707 27.409 26.595L25.7597 7.70684ZM10.9604 5.33027C10.9604 3.07911 12.7853 1.25418 15.0365 1.25418C17.2876 1.25418 19.1126 3.07911 19.1126 5.33027V7.13634H10.9604V5.33027ZM25.6657 28.1375C25.311 28.528 24.8071 28.7492 24.2797 28.7457H5.79302C5.26563 28.746 4.76248 28.5248 4.40583 28.1363C4.04941 27.7475 3.87231 27.227 3.91812 26.7016L5.51083 8.39052H9.70621V12.3035C8.69772 12.6138 8.06794 13.615 8.22495 14.6585C8.38173 15.7018 9.27827 16.4734 10.3333 16.4734C11.3883 16.4734 12.2846 15.7018 12.4416 14.6585C12.5984 13.615 11.9686 12.6138 10.9604 12.3035V8.38415H19.1126V12.3035C18.1041 12.6138 17.4743 13.615 17.6313 14.6585C17.7881 15.7018 18.6846 16.4734 19.7397 16.4734C20.7947 16.4734 21.691 15.7018 21.848 14.6585C22.0048 13.615 21.375 12.6138 20.3667 12.3035V8.38415H24.5558L26.1485 26.6952C26.1999 27.2228 26.0243 27.7473 25.6657 28.1375ZM10.2392 13.4699C10.3017 13.4783 10.3649 13.4783 10.4274 13.4699C10.8911 13.5199 11.235 13.9241 11.21 14.3898C11.1848 14.8557 10.7997 15.2207 10.3333 15.2207C9.86666 15.2207 9.48158 14.8557 9.4566 14.3898C9.43161 13.9241 9.77529 13.5199 10.2392 13.4699ZM19.6456 13.4699C19.7081 13.4783 19.7713 13.4783 19.8337 13.4699C20.2974 13.5199 20.6413 13.9241 20.6164 14.3898C20.5911 14.8557 20.2061 15.2207 19.7397 15.2207C19.273 15.2207 18.8879 14.8557 18.863 14.3898C18.838 13.9241 19.1816 13.5199 19.6456 13.4699Z" fill="#181818"></path>
+                                        <clippath id="clip0_103_180">
+                                            <rect width="30" height="30" fill="white"></rect>
+                                        </clippath>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="header-body__icon-nav">
+                    <li><a href="#"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.8538 23.1468L16.5518 15.8449C18.0678 14.1609 18.9998 11.9409 18.9998 9.5009C18.9998 4.26295 14.7378 0.000976562 9.49988 0.000976562C4.26193 0.000976562 0 4.26295 0 9.5009C0 14.7388 4.26197 19.0008 9.49992 19.0008C11.9399 19.0008 14.1599 18.0688 15.8439 16.5519L23.1458 23.8538C23.2438 23.9518 23.3718 24.0008 23.4998 24.0008C23.6278 24.0008 23.7558 23.9518 23.8538 23.8548C24.0487 23.6588 24.0487 23.3428 23.8538 23.1468ZM9.49992 18.0008C4.81298 18.0008 1.00002 14.1879 1.00002 9.50095C1.00002 4.81401 4.81294 1.001 9.49992 1.001C14.1869 1.001 17.9998 4.81396 17.9998 9.5009C17.9998 14.1878 14.1869 18.0008 9.49992 18.0008Z" fill="black"></path>
+                                <clippath id="clip0_7_16094">
+                                    <rect width="24" height="24" fill="white"></rect>
+                                </clippath>
+                            </svg></a></li>
+                    <li><a href="#"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.75 1C15.0879 1 12.8892 3.47266 12 4.63966C11.1108 3.47266 8.91211 1 6.24998 1C2.80373 1 0 4.16847 0 8.06252C0 10.187 0.843281 12.167 2.31933 13.522C2.3408 13.5591 2.36719 13.5933 2.39794 13.624L11.647 22.854C11.7446 22.9512 11.8721 23 12 23C12.1279 23 12.2558 22.9512 12.3535 22.8535L21.9102 13.3003L22.0088 13.2046C22.0869 13.1309 22.1641 13.0562 22.2505 12.9605C22.2866 12.9249 22.3164 12.8848 22.3394 12.8413C23.4112 11.5288 24 9.83594 24 8.06252C24 4.16847 21.1963 1 17.75 1ZM21.5073 12.2788C21.4936 12.295 21.4809 12.312 21.4697 12.3296C21.4229 12.3833 21.3716 12.4307 21.3208 12.479L11.9995 21.7935L3.21877 13.0303C3.19045 12.9746 3.15089 12.9238 3.10256 12.8814C1.76611 11.7144 0.999984 9.958 0.999984 8.06252C0.999984 4.71972 3.35498 2.00003 6.24998 2.00003C9.11231 2.00003 11.5552 5.73344 11.5796 5.77103C11.7642 6.05617 12.2358 6.05617 12.4204 5.77103C12.4448 5.73344 14.8877 2.00003 17.75 2.00003C20.645 2.00003 23 4.71977 23 8.06252C23 9.6377 22.4697 11.1353 21.5073 12.2788Z" fill="#181818"></path>
+                            </svg></a></li>
+                    <li><a href="#"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.6076 6.16547C20.5856 5.90562 20.3667 5.70652 20.1059 5.70907H16.2932V4.26421C16.2932 1.9091 14.3839 0 12.029 0C9.67387 0 7.76477 1.9091 7.76477 4.26421V5.70907H3.95206C3.69241 5.71005 3.47567 5.90719 3.45039 6.16547L2.13605 21.276C2.07628 21.9766 2.31301 22.6703 2.78901 23.1882C3.26481 23.706 3.93599 24.0005 4.63932 23.9999H19.4236C20.1269 24.0005 20.7981 23.706 21.2739 23.1882C21.7499 22.6703 21.9868 21.9766 21.927 21.276L20.6076 6.16547ZM8.76812 4.26421C8.76812 2.46329 10.2281 1.00334 12.029 1.00334C13.8299 1.00334 15.2899 2.46329 15.2899 4.26421V5.70907H8.76812V4.26421ZM20.5323 22.51C20.2486 22.8224 19.8455 22.9993 19.4236 22.9966H4.63422C4.21231 22.9968 3.80979 22.8198 3.52447 22.509C3.23934 22.198 3.09765 21.7816 3.1343 21.3612L4.40847 6.71241H7.76477V9.84277C6.95798 10.0911 6.45415 10.892 6.57977 11.7268C6.70519 12.5614 7.42242 13.1787 8.26644 13.1787C9.11047 13.1787 9.82751 12.5614 9.95312 11.7268C10.0785 10.892 9.57471 10.0911 8.76812 9.84277V6.70732H15.2899V9.84277C14.4831 10.0911 13.9792 10.892 14.1049 11.7268C14.2303 12.5614 14.9475 13.1787 15.7915 13.1787C16.6356 13.1787 17.3526 12.5614 17.4782 11.7268C17.6036 10.892 17.0998 10.0911 16.2932 9.84277V6.70732H19.6444L20.9186 21.3561C20.9597 21.7783 20.8192 22.1978 20.5323 22.51ZM8.19119 10.776C8.24117 10.7826 8.29172 10.7826 8.3417 10.776C8.71266 10.8159 8.98779 11.1393 8.96781 11.5118C8.94762 11.8845 8.63956 12.1765 8.26644 12.1765C7.89313 12.1765 7.58507 11.8845 7.56508 11.5118C7.54509 11.1393 7.82003 10.8159 8.19119 10.776ZM15.7163 10.776C15.7662 10.7826 15.8168 10.7826 15.8668 10.776C16.2377 10.8159 16.5129 11.1393 16.4929 11.5118C16.4727 11.8845 16.1646 12.1765 15.7915 12.1765C15.4182 12.1765 15.1102 11.8845 15.0902 11.5118C15.0702 11.1393 15.3451 10.8159 15.7163 10.776Z" fill="#181818"></path>
+                                <clippath id="clip0_7_16086">
+                                    <rect width="24" height="24" fill="white"></rect>
+                                </clippath>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="page">
+            <div class="internal" style="background-image: url(&quot;img/project/project_1.png&quot;);">
+                <section class="crumbs">
+                    <div class="_container">
+                        <ul class="crumbs-list">
+                            <li>Spectr</li>
+                            <li><a href="#">Минимализм как стиль жизни: с чего начать знакомство</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="titlePage">
+                    <div class="_container">
+                        <h1 class="h1">Минимализм как стиль жизни: с чего начать знакомство</h1>
+                    </div>
+                </section>
+            </div>
+            <div class="_container">
+                <div class="articles_internal">
+                    <div class="articles-main">
+                        <div class="articles-main__body articles-main-body">
+                            <div class="articles-main-body__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim egestas euismod arcu amet ipsum fermentum quis. Placerat sed etiam ultrices tempor, netus elementum massa sapien aenean. Donec auctor ultricies vitae dui. Tellus urna ut risus ornare. Volutpat amet id urna convallis mauris semper vel aliquet dictumst. Diam et, et orci sed quis cursus ridiculus ut.</p><br>
+                                <p>Sit urna non eu, nec id morbi ut. Rhoncus, enim, lectus vitae elit purus et vitae pellentesque enim. Duis tristique vel lectus leo fermentum sem aliquam lacinia. Mattis nunc, nec, quam elit. Quis egestas ornare ullamcorper ut. Sapien elit mauris quam mi imperdiet eros, fermentum ac tristique. Nisl venenatis, consequat id molestie integer pretium auctor gravida. Eu dignissim ornare amet nunc sagittis, placerat sagittis. Eros, odio nibh ac tortor netus. Sit faucibus dolor adipiscing sed cursus suspendisse.</p><br><br>
+                                <h2>Подзаголовок</h2><br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim egestas euismod arcu amet ipsum fermentum quis. Placerat sed etiam ultrices tempor, netus elementum massa sapien aenean. Donec auctor ultricies vitae dui. Tellus urna ut risus ornare. Volutpat amet id urna convallis mauris semper vel aliquet dictumst. Diam et, et orci sed quis cursus ridiculus ut.</p><br>
+                                <p>Sit urna non eu, nec id morbi ut. Rhoncus, enim, lectus vitae elit purus et vitae pellentesque enim. Duis tristique vel lectus leo fermentum sem aliquam lacinia. Mattis nunc, nec, quam elit. Quis egestas ornare ullamcorper ut. Sapien elit mauris quam mi imperdiet eros, fermentum ac tristique. Nisl venenatis, consequat id molestie integer pretium auctor gravida. Eu dignissim ornare amet nunc sagittis, placerat sagittis. Eros, odio nibh ac tortor netus. Sit faucibus dolor adipiscing sed cursus suspendisse.</p><br><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim egestas euismod arcu amet ipsum fermentum quis. Placerat sed etiam ultrices tempor, netus elementum massa sapien aenean. Donec auctor ultricies vitae dui.</q><br>
+                                <p>Sit lorem venenatis quis vitae justo, in sed mauris. Venenatis enim varius enim sodales donec. Donec tellus velit et, etiam mattis a tristique platea. Facilisis et tortor augue nisi. Sollicitudin laoreet in justo, etiam habitant molestie sed faucibus id. Aenean dictumst congue ut risus libero dignissim amet fermentum. Facilisis sit turpis justo, justo lorem pellentesque et. At faucibus eget magna etiam adipiscing turpis. Eget varius massa scelerisque bibendum tortor maecenas varius consequat ultricies. Tristique interdum sed dolor id. Semper elit, commodo et eget. Aliquet amet volutpat eu ultricies tincidunt purus molestie platea sociis. Posuere enim, purus purus aliquet commodo.</p>
+                            </div>
+                            <div class="articles-main-body__img"><img src="img/project/project_1.png"></div>
+                            <div class="articles-main-body__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim egestas euismod arcu amet ipsum fermentum quis. Placerat sed etiam ultrices tempor, netus elementum massa sapien aenean. Donec auctor ultricies vitae dui. Tellus urna ut risus ornare. Volutpat amet id urna convallis mauris semper vel aliquet dictumst. Diam et, et orci sed quis cursus ridiculus ut.</p><br>
+                                <p>Sit urna non eu, nec id morbi ut. Rhoncus, enim, lectus vitae elit purus et vitae pellentesque enim. Duis tristique vel lectus leo fermentum sem aliquam lacinia. Mattis nunc, nec, quam elit. Quis egestas ornare ullamcorper ut. Sapien elit mauris quam mi imperdiet eros, fermentum ac tristique. Nisl venenatis, consequat id molestie integer pretium auctor gravida. Eu dignissim ornare amet nunc sagittis, placerat sagittis. Eros, odio nibh ac tortor netus. Sit faucibus dolor adipiscing sed cursus suspendisse.</p><br><br>
+                                <h2>Подзаголовок</h2><br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim egestas euismod arcu amet ipsum fermentum quis. Placerat sed etiam ultrices tempor, netus elementum massa sapien aenean. Donec auctor ultricies vitae dui. Tellus urna ut risus ornare. Volutpat amet id urna convallis mauris semper vel aliquet dictumst. Diam et, et orci sed quis cursus ridiculus ut.</p><br>
+                                <p>Sit urna non eu, nec id morbi ut. Rhoncus, enim, lectus vitae elit purus et vitae pellentesque enim. Duis tristique vel lectus leo fermentum sem aliquam lacinia. Mattis nunc, nec, quam elit. Quis egestas ornare ullamcorper ut. Sapien elit mauris quam mi imperdiet eros, fermentum ac tristique. Nisl venenatis, consequat id molestie integer pretium auctor gravida. Eu dignissim ornare amet nunc sagittis, placerat sagittis. Eros, odio nibh ac tortor netus. Sit faucibus dolor adipiscing sed cursus suspendisse.</p><br><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim egestas euismod arcu amet ipsum fermentum quis. Placerat sed etiam ultrices tempor, netus elementum massa sapien aenean. Donec auctor ultricies vitae dui.</q><br>
+                                <p>Sit lorem venenatis quis vitae justo, in sed mauris. Venenatis enim varius enim sodales donec. Donec tellus velit et, etiam mattis a tristique platea. Facilisis et tortor augue nisi. Sollicitudin laoreet in justo, etiam habitant molestie sed faucibus id. Aenean dictumst congue ut risus libero dignissim amet fermentum. Facilisis sit turpis justo, justo lorem pellentesque et. At faucibus eget magna etiam adipiscing turpis. Eget varius massa scelerisque bibendum tortor maecenas varius consequat ultricies. Tristique interdum sed dolor id. Semper elit, commodo et eget. Aliquet amet volutpat eu ultricies tincidunt purus molestie platea sociis. Posuere enim, purus purus aliquet commodo.</p>
+                            </div>
+                            <div class="articles-main-body__img"><img src="img/project/project_2.png"></div>
+                            <div class="articles-main-body__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim egestas euismod arcu amet ipsum fermentum quis. Placerat sed etiam ultrices tempor, netus elementum massa sapien aenean. Donec auctor ultricies vitae dui. Tellus urna ut risus ornare. Volutpat amet id urna convallis mauris semper vel aliquet dictumst. Diam et, et orci sed quis cursus ridiculus ut.</p><br>
+                                <p>Sit urna non eu, nec id morbi ut. Rhoncus, enim, lectus vitae elit purus et vitae pellentesque enim. Duis tristique vel lectus leo fermentum sem aliquam lacinia. Mattis nunc, nec, quam elit. Quis egestas ornare ullamcorper ut. Sapien elit mauris quam mi imperdiet eros, fermentum ac tristique. Nisl venenatis, consequat id molestie integer pretium auctor gravida. Eu dignissim ornare amet nunc sagittis, placerat sagittis. Eros, odio nibh ac tortor netus. Sit faucibus dolor adipiscing sed cursus suspendisse.</p><br><br>
+                                <h2>Подзаголовок</h2><br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim egestas euismod arcu amet ipsum fermentum quis. Placerat sed etiam ultrices tempor, netus elementum massa sapien aenean. Donec auctor ultricies vitae dui. Tellus urna ut risus ornare. Volutpat amet id urna convallis mauris semper vel aliquet dictumst. Diam et, et orci sed quis cursus ridiculus ut.</p><br>
+                                <p>Sit urna non eu, nec id morbi ut. Rhoncus, enim, lectus vitae elit purus et vitae pellentesque enim. Duis tristique vel lectus leo fermentum sem aliquam lacinia. Mattis nunc, nec, quam elit. Quis egestas ornare ullamcorper ut. Sapien elit mauris quam mi imperdiet eros, fermentum ac tristique. Nisl venenatis, consequat id molestie integer pretium auctor gravida. Eu dignissim ornare amet nunc sagittis, placerat sagittis. Eros, odio nibh ac tortor netus. Sit faucibus dolor adipiscing sed cursus suspendisse.</p><br><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim egestas euismod arcu amet ipsum fermentum quis. Placerat sed etiam ultrices tempor, netus elementum massa sapien aenean. Donec auctor ultricies vitae dui.</q><br>
+                                <p>Sit lorem venenatis quis vitae justo, in sed mauris. Venenatis enim varius enim sodales donec. Donec tellus velit et, etiam mattis a tristique platea. Facilisis et tortor augue nisi. Sollicitudin laoreet in justo, etiam habitant molestie sed faucibus id. Aenean dictumst congue ut risus libero dignissim amet fermentum. Facilisis sit turpis justo, justo lorem pellentesque et. At faucibus eget magna etiam adipiscing turpis. Eget varius massa scelerisque bibendum tortor maecenas varius consequat ultricies. Tristique interdum sed dolor id. Semper elit, commodo et eget. Aliquet amet volutpat eu ultricies tincidunt purus molestie platea sociis. Posuere enim, purus purus aliquet commodo.</p>
+                            </div>
+                        </div>
+                        <div class="video-basic-body__bottom video-basic-body-bottom">
+                            <div class="video-basic-body-bottom__hashtags"><span>Стиль</span><span>Минимализм</span></div>
+                            <div class="video-basic-body-bottom__share"><span>Поделиться:</span><a href="#"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_321_1487)">
+                                            <path d="M14.6644 3.65292H16.6728V0.154917C16.3263 0.10725 15.1346 0 13.7468 0C10.851 0 8.86738 1.82142 8.86738 5.16908V8.25H5.67188V12.1605H8.86738V22H12.7852V12.1614H15.8515L16.3382 8.25092H12.7843V5.55683C12.7852 4.42658 13.0895 3.65292 14.6644 3.65292Z" fill="black"></path>
+                                        </g>
+                                        <defs>
+                                            <clippath id="clip0_321_1487">
+                                                <rect width="22" height="22" fill="white"></rect>
+                                            </clippath>
+                                        </defs>
+                                    </svg></a><a href="#"><svg width="26" height="26" viewbox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_321_1489)">
+                                            <path d="M10.2019 16.4461L9.77186 22.4954C10.3872 22.4954 10.6537 22.2311 10.9733 21.9137L13.8582 19.1566L19.836 23.5344C20.9324 24.1454 21.7048 23.8236 22.0005 22.5258L25.9244 4.13945L25.9254 4.13837C26.2732 2.5177 25.3394 1.88395 24.2712 2.28153L1.20703 11.1118C-0.367057 11.7228 -0.343224 12.6003 0.939443 12.9979L6.83603 14.8319L20.5326 6.2617C21.1772 5.83487 21.7633 6.07103 21.2812 6.49787L10.2019 16.4461Z" fill="black"></path>
+                                        </g>
+                                        <defs>
+                                            <clippath id="clip0_321_1489">
+                                                <rect width="26" height="26" fill="white"></rect>
+                                            </clippath>
+                                        </defs>
+                                    </svg></a><a href="#"><svg width="26" height="26" viewbox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_321_1482)">
+                                            <path d="M25.8622 18.9798C25.8307 18.9119 25.8013 18.8556 25.7741 18.8106C25.323 17.9981 24.4609 17.0009 23.1885 15.8186L23.1616 15.7915L23.1481 15.7783L23.1345 15.7647H23.1209C22.5434 15.2141 22.1777 14.844 22.0245 14.6545C21.7443 14.2934 21.6815 13.928 21.8347 13.5578C21.9429 13.278 22.3493 12.6872 23.053 11.7846C23.4232 11.3062 23.7163 10.9229 23.9328 10.634C25.4942 8.55821 26.1712 7.23175 25.9635 6.6541L25.8828 6.51911C25.8286 6.43784 25.6888 6.3635 25.4634 6.29569C25.2375 6.22803 24.9488 6.21684 24.5968 6.26194L20.6982 6.28887C20.635 6.26649 20.5448 6.26857 20.4274 6.29569C20.31 6.32282 20.2513 6.33642 20.2513 6.33642L20.1835 6.37032L20.1296 6.41105C20.0845 6.43798 20.0348 6.48535 19.9806 6.55306C19.9267 6.62053 19.8816 6.69971 19.8456 6.78994C19.4211 7.88194 18.9385 8.89722 18.3969 9.83574C18.063 10.3954 17.7563 10.8804 17.4762 11.291C17.1965 11.7015 16.9619 12.004 16.7725 12.1979C16.5829 12.3919 16.4117 12.5474 16.258 12.6649C16.1045 12.7823 15.9873 12.832 15.9062 12.8138C15.8249 12.7957 15.7483 12.7777 15.6758 12.7596C15.5496 12.6784 15.448 12.5678 15.3714 12.428C15.2945 12.2881 15.2427 12.1121 15.2157 11.9C15.1887 11.6877 15.1728 11.5052 15.1683 11.3517C15.164 11.1984 15.166 10.9816 15.1751 10.7019C15.1845 10.422 15.1887 10.2326 15.1887 10.1333C15.1887 9.79032 15.1954 9.41807 15.2088 9.01647C15.2225 8.61487 15.2335 8.29667 15.2428 8.06226C15.252 7.8276 15.2563 7.57934 15.2563 7.31761C15.2563 7.05589 15.2403 6.85063 15.2088 6.70166C15.1777 6.55287 15.13 6.40845 15.0671 6.26843C15.0038 6.12856 14.9111 6.02036 14.7896 5.94355C14.6678 5.86683 14.5163 5.80595 14.3361 5.76072C13.8577 5.65247 13.2486 5.59392 12.5084 5.58481C10.8299 5.56679 9.75136 5.67518 9.27305 5.90984C9.08353 6.00898 8.91204 6.14444 8.7587 6.3158C8.59621 6.51442 8.57355 6.62281 8.69085 6.64063C9.23242 6.72176 9.61581 6.91583 9.84145 7.22264L9.92277 7.38523C9.98602 7.50253 10.0492 7.7102 10.1124 8.00797C10.1755 8.30573 10.2162 8.63512 10.2341 8.99594C10.2792 9.65485 10.2792 10.2189 10.2341 10.6881C10.189 11.1575 10.1463 11.5229 10.1055 11.7847C10.0648 12.0464 10.0039 12.2585 9.92277 12.4209C9.84145 12.5833 9.78735 12.6826 9.76023 12.7186C9.73316 12.7547 9.71059 12.7774 9.69267 12.7863C9.57536 12.8312 9.45337 12.8541 9.3271 12.8541C9.20065 12.8541 9.04731 12.7909 8.86685 12.6645C8.68644 12.5381 8.4992 12.3644 8.30513 12.1433C8.11107 11.9221 7.8922 11.613 7.64845 11.216C7.40488 10.8189 7.15216 10.3497 6.89043 9.80819L6.67389 9.41551C6.53852 9.16288 6.35361 8.79504 6.11896 8.31232C5.88416 7.8294 5.67663 7.36228 5.49622 6.91104C5.4241 6.72152 5.31576 6.57724 5.17138 6.47796L5.10363 6.43723C5.05858 6.40119 4.98628 6.36293 4.88708 6.32215C4.78775 6.28142 4.6841 6.25221 4.57572 6.23424L0.866543 6.26118C0.487514 6.26118 0.230339 6.34704 0.0949234 6.51854L0.0407289 6.59967C0.0136553 6.64485 0 6.71702 0 6.81635C0 6.91564 0.0270736 7.03749 0.0812681 7.18177C0.622739 8.45437 1.21158 9.68169 1.84778 10.8639C2.48399 12.0461 3.03684 12.9985 3.506 13.72C3.97526 14.4421 4.45358 15.1236 4.94095 15.7641C5.42832 16.4049 5.75093 16.8156 5.90877 16.996C6.0668 17.1768 6.19093 17.3119 6.28116 17.4021L6.61965 17.7269C6.83624 17.9436 7.15429 18.203 7.57396 18.5053C7.99372 18.8078 8.45842 19.1055 8.96832 19.3991C9.4783 19.6921 10.0716 19.9313 10.7485 20.1162C11.4254 20.3014 12.0841 20.3757 12.725 20.3399H14.2818C14.5975 20.3126 14.8367 20.2133 14.9993 20.042L15.0531 19.9741C15.0894 19.9202 15.1233 19.8366 15.1546 19.7239C15.1862 19.6111 15.202 19.4869 15.202 19.3517C15.1927 18.9637 15.2223 18.614 15.2898 18.3027C15.3572 17.9915 15.4342 17.7568 15.5202 17.5988C15.6061 17.4409 15.7031 17.3077 15.8111 17.1997C15.9193 17.0914 15.9964 17.0258 16.0416 17.0033C16.0866 16.9806 16.1225 16.9651 16.1495 16.9559C16.3661 16.8837 16.621 16.9536 16.9146 17.1659C17.208 17.378 17.4831 17.6398 17.7405 17.9511C17.9977 18.2626 18.3067 18.6121 18.6677 19.0001C19.0288 19.3882 19.3446 19.6767 19.6152 19.8665L19.8859 20.029C20.0666 20.1373 20.3013 20.2366 20.5901 20.3269C20.8785 20.417 21.1311 20.4396 21.348 20.3945L24.8134 20.3405C25.1561 20.3405 25.4228 20.2837 25.612 20.1711C25.8016 20.0583 25.9142 19.934 25.9505 19.7989C25.9867 19.6635 25.9887 19.51 25.9574 19.3384C25.9253 19.1672 25.8937 19.0474 25.8622 18.9798Z" fill="#181818"></path>
+                                        </g>
+                                        <defs>
+                                            <clippath id="clip0_321_1482">
+                                                <rect width="26" height="26" fill="white"></rect>
+                                            </clippath>
+                                        </defs>
+                                    </svg></a><a href="#"><svg width="26" height="26" viewbox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6224 4.34209C19.342 2.05902 16.3093 0.801144 13.0783 0.799805C6.42075 0.799805 1.00243 6.21797 0.999752 12.8774C0.998859 15.0062 1.55497 17.0842 2.61201 18.9159L0.898438 25.1748L7.30149 23.4952C9.06579 24.4576 11.0521 24.9647 13.0734 24.9653H13.0785C19.7354 24.9653 25.1543 19.5467 25.1568 12.887C25.1581 9.65954 23.9029 6.62502 21.6224 4.34209ZM13.0783 22.9255H13.0742C11.2728 22.9248 9.50616 22.4406 7.96457 21.5261L7.59814 21.3085L3.79847 22.3053L4.81266 18.6007L4.57388 18.2208C3.56892 16.6224 3.03824 14.775 3.03913 12.8781C3.04122 7.343 7.54488 2.83978 13.0824 2.83978C15.7639 2.84067 18.2845 3.88625 20.1799 5.78385C22.0753 7.68146 23.1185 10.2038 23.1176 12.8863C23.1152 18.4218 18.6118 22.9255 13.0783 22.9255ZM18.585 15.4067C18.2833 15.2555 16.7995 14.5256 16.5227 14.4247C16.2463 14.324 16.0449 14.2739 15.8439 14.5759C15.6426 14.8779 15.0643 15.5578 14.8882 15.7591C14.712 15.9605 14.5362 15.9858 14.2343 15.8347C13.9325 15.6837 12.9601 15.3648 11.8072 14.3367C10.9101 13.5364 10.3045 12.5481 10.1283 12.2461C9.95248 11.9438 10.1268 11.7962 10.2607 11.6302C10.5874 11.2245 10.9146 10.7991 11.0152 10.5979C11.1159 10.3964 11.0654 10.2201 10.9899 10.0691C10.9146 9.91811 10.311 8.43261 10.0596 7.82815C9.81441 7.2399 9.56581 7.31934 9.38044 7.31012C9.20459 7.30134 9.0033 7.29956 8.80201 7.29956C8.60087 7.29956 8.27387 7.37498 7.99715 7.67729C7.72058 7.97945 6.94101 8.70948 6.94101 10.195C6.94101 11.6805 8.02244 13.1155 8.1733 13.317C8.32415 13.5184 10.3015 16.5668 13.3289 17.8739C14.0489 18.1851 14.611 18.3707 15.0494 18.5098C15.7725 18.7395 16.4302 18.707 16.9503 18.6294C17.5302 18.5426 18.7357 17.8992 18.9875 17.1943C19.2389 16.4893 19.2389 15.8851 19.1633 15.7591C19.088 15.6332 18.8868 15.5578 18.585 15.4067Z" fill="black"></path>
+                                    </svg></a></div>
+                        </div>
+                    </div>
+                    <div class="articles-aside">
+                        <div class="articles-aside__body articles-aside-body">
+                            <div class="articles-aside-body__articles articles-aside-body-articles">
+                                <div class="articles-aside-body-articles__title h3">Популярные статьи</div>
+                                <div class="articles-aside-body-articles__grid three"><a class="articles-aside-body-articles__el" href="#">
+                                        <div class="articles-aside-body-articles__img" style="background-image: url(&quot;img/project/project_1.png&quot;);"></div>
+                                        <div class="articles-aside-body-articles__text">4 дизайн-приема для малогабариток от самого дорогого архитектора</div>
+                                    </a><a class="articles-aside-body-articles__el" href="#">
+                                        <div class="articles-aside-body-articles__img" style="background-image: url(&quot;img/project/project_1.png&quot;);"></div>
+                                        <div class="articles-aside-body-articles__text">4 дизайн-приема для малогабариток от самого дорогого архитектора</div>
+                                    </a><a class="articles-aside-body-articles__el" href="#">
+                                        <div class="articles-aside-body-articles__img" style="background-image: url(&quot;img/project/project_1.png&quot;);"></div>
+                                        <div class="articles-aside-body-articles__text">4 дизайн-приема для малогабариток от самого дорогого архитектора</div>
+                                    </a></div>
+                            </div>
+                            <div class="articles-aside-body__project articles-aside-body-project">
+                                <div class="articles-aside-body-project__title h3"> Лучшие проекты</div>
+                                <div class="articles-aside-body-project__grid three"><a class="articles-aside-body-project__el" href="#" style="background-image: url(&quot;img/project/project_1.png&quot;);">
+                                        <div class="articles-aside-body-project__text">Квартира в стиле современного минимализма</div>
+                                    </a><a class="articles-aside-body-project__el" href="#" style="background-image: url(&quot;img/project/project_1.png&quot;);">
+                                        <div class="articles-aside-body-project__text">Квартира в стиле современного минимализма</div>
+                                    </a><a class="articles-aside-body-project__el" href="#" style="background-image: url(&quot;img/project/project_1.png&quot;);">
+                                        <div class="articles-aside-body-project__text">Квартира в стиле современного минимализма</div>
+                                    </a></div>
+                            </div>
+                            <div class="articles-aside-body__video articles-aside-body-video">
+                                <div class="articles-aside-body-video__title h3"> Видео-идеи</div>
+                                <div class="articles-aside-body-video__grid three"><a class="articles-aside-body-video__el" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" style="background-image: url(&quot;img/project/project_1.png&quot;);">
+                                        <div class="articles-aside-body-video__ic"><svg width="58" height="58" viewbox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M29 0C13.0084 0 0 13.0097 0 29C0 44.9903 13.0084 58 29 58C44.9916 58 58 44.9903 58 29C58 13.0097 44.9916 0 29 0ZM40.5287 30.016L23.6121 40.891C23.4139 41.0196 23.1849 41.0834 22.9584 41.0834C22.7601 41.0834 22.5595 41.0338 22.3802 40.9359C21.9907 40.7235 21.75 40.3175 21.75 39.875V18.125C21.75 17.6825 21.9907 17.2765 22.3802 17.0641C22.7625 16.8541 23.2416 16.867 23.6121 17.109L40.5287 27.984C40.8733 28.2058 41.0834 28.5894 41.0834 29C41.0834 29.4106 40.8733 29.7941 40.5287 30.016Z" fill="white"></path>
+                                            </svg></div>
+                                        <div class="articles-aside-body-video__text">Светлая квартира модерн</div>
+                                    </a><a class="articles-aside-body-video__el" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" style="background-image: url(&quot;img/project/project_1.png&quot;);">
+                                        <div class="articles-aside-body-video__ic"><svg width="58" height="58" viewbox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M29 0C13.0084 0 0 13.0097 0 29C0 44.9903 13.0084 58 29 58C44.9916 58 58 44.9903 58 29C58 13.0097 44.9916 0 29 0ZM40.5287 30.016L23.6121 40.891C23.4139 41.0196 23.1849 41.0834 22.9584 41.0834C22.7601 41.0834 22.5595 41.0338 22.3802 40.9359C21.9907 40.7235 21.75 40.3175 21.75 39.875V18.125C21.75 17.6825 21.9907 17.2765 22.3802 17.0641C22.7625 16.8541 23.2416 16.867 23.6121 17.109L40.5287 27.984C40.8733 28.2058 41.0834 28.5894 41.0834 29C41.0834 29.4106 40.8733 29.7941 40.5287 30.016Z" fill="white"></path>
+                                            </svg></div>
+                                        <div class="articles-aside-body-video__text">Светлая квартира модерн</div>
+                                    </a><a class="articles-aside-body-video__el" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" style="background-image: url(&quot;img/project/project_1.png&quot;);">
+                                        <div class="articles-aside-body-video__ic"><svg width="58" height="58" viewbox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M29 0C13.0084 0 0 13.0097 0 29C0 44.9903 13.0084 58 29 58C44.9916 58 58 44.9903 58 29C58 13.0097 44.9916 0 29 0ZM40.5287 30.016L23.6121 40.891C23.4139 41.0196 23.1849 41.0834 22.9584 41.0834C22.7601 41.0834 22.5595 41.0338 22.3802 40.9359C21.9907 40.7235 21.75 40.3175 21.75 39.875V18.125C21.75 17.6825 21.9907 17.2765 22.3802 17.0641C22.7625 16.8541 23.2416 16.867 23.6121 17.109L40.5287 27.984C40.8733 28.2058 41.0834 28.5894 41.0834 29C41.0834 29.4106 40.8733 29.7941 40.5287 30.016Z" fill="white"></path>
+                                            </svg></div>
+                                        <div class="articles-aside-body-video__text">Светлая квартира модерн</div>
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="articles-email">
+                <div class="_container">
+                    <div class="articles-email__body">
+                        <div class="articles-email__bg">
+                            <picture>
+                                <source srcset="img/articles-min.png" type="image/png" media="(max-width: 600px)">
+                                <source srcset="img/articles.png" type="image/png" media="(min-width: 600px)"><img src="img/articles.png" alt="Картинка">
+                            </picture>
+                        </div>
+                        <form>
+                            <div class="articles-email__title">Хотите читать интересные статьи каждую неделю?</div>
+                            <div class="articles-email__text">Подпишитесь на нашу рассылку.</div><span class="input input--hoshi"><input class="input__field input__field--hoshi" id="input-2" type="text"><label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-2"><span class="input__label-content input__label-content--hoshi">E-mail*</span></label></span><button class="button-o">Подписаться</button>
+                        </form>
+                        <div class="articles-email__img"><img src="img/articles.svg"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="_container">
+                <div class="footer__grid footer-grid">
+                    <div class="footer-grid__el">
+                        <div class="footer__logo"><img src="img/logo.svg"></div>
+                        <div class="footer__soc"><span>Мы в соц сетях</span><a href="#"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.96 0H17.04C20.88 0 24 3.12 24 6.96V17.04C24 18.8859 23.2667 20.6562 21.9615 21.9615C20.6562 23.2667 18.8859 24 17.04 24H6.96C3.12 24 0 20.88 0 17.04V6.96C0 5.11409 0.733284 3.34379 2.03854 2.03854C3.34379 0.733284 5.11409 0 6.96 0ZM6.72 2.4C5.57427 2.4 4.47546 2.85514 3.6653 3.6653C2.85514 4.47546 2.4 5.57427 2.4 6.72V17.28C2.4 19.668 4.332 21.6 6.72 21.6H17.28C18.4257 21.6 19.5245 21.1449 20.3347 20.3347C21.1449 19.5245 21.6 18.4257 21.6 17.28V6.72C21.6 4.332 19.668 2.4 17.28 2.4H6.72ZM18.3 4.2C18.6978 4.2 19.0794 4.35804 19.3607 4.63934C19.642 4.92064 19.8 5.30218 19.8 5.7C19.8 6.09783 19.642 6.47936 19.3607 6.76066C19.0794 7.04197 18.6978 7.2 18.3 7.2C17.9022 7.2 17.5206 7.04197 17.2393 6.76066C16.958 6.47936 16.8 6.09783 16.8 5.7C16.8 5.30218 16.958 4.92064 17.2393 4.63934C17.5206 4.35804 17.9022 4.2 18.3 4.2ZM12 6C13.5913 6 15.1174 6.63214 16.2426 7.75736C17.3679 8.88258 18 10.4087 18 12C18 13.5913 17.3679 15.1174 16.2426 16.2426C15.1174 17.3679 13.5913 18 12 18C10.4087 18 8.88258 17.3679 7.75736 16.2426C6.63214 15.1174 6 13.5913 6 12C6 10.4087 6.63214 8.88258 7.75736 7.75736C8.88258 6.63214 10.4087 6 12 6ZM12 8.4C11.0452 8.4 10.1295 8.77928 9.45442 9.45442C8.77928 10.1295 8.4 11.0452 8.4 12C8.4 12.9548 8.77928 13.8705 9.45442 14.5456C10.1295 15.2207 11.0452 15.6 12 15.6C12.9548 15.6 13.8705 15.2207 14.5456 14.5456C15.2207 13.8705 15.6 12.9548 15.6 12C15.6 11.0452 15.2207 10.1295 14.5456 9.45442C13.8705 8.77928 12.9548 8.4 12 8.4Z" fill="#181818"></path>
+                                </svg></a></div>
+                        <div class="footer__polit"><a href="#">Политика конфиденциальности</a></div>
+                        <div class="footer__componi">Spectr © 2021</div>
+                        <div class="footer__labs"><svg width="170" height="27" viewbox="0 0 170 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.456 11.664C6.53333 11.664 7.46667 11.92 8.256 12.432L8 13.6L7.856 13.632C7.14133 13.0347 6.32 12.736 5.392 12.736C4.37867 12.736 3.6 13.088 3.056 13.792C2.512 14.4853 2.24 15.504 2.24 16.848C2.24 18.2027 2.512 19.2373 3.056 19.952C3.6 20.6667 4.368 21.024 5.36 21.024C6.34133 21.024 7.232 20.6987 8.032 20.048L8.192 20.128L8.08 21.344C7.152 21.856 6.208 22.112 5.248 22.112C3.872 22.112 2.80533 21.6693 2.048 20.784C1.29067 19.888 0.912 18.6133 0.912 16.96C0.912 15.264 1.30667 13.9573 2.096 13.04C2.88533 12.1227 4.00533 11.664 5.456 11.664ZM15.4004 21.072H16.4564V23.696L15.6084 23.792L15.4644 22H10.1524L10.0084 23.696L9.14438 23.792V21.072H9.73638C10.2057 20.784 10.5417 20.288 10.7444 19.584C10.9577 18.88 11.1444 17.6587 11.3044 15.92L11.4164 14.672H15.4164L15.3844 18.784L15.4004 21.072ZM14.2164 21.072L14.2484 18.896L14.2164 15.52H12.3444L12.2804 16.112C12.1417 17.5947 11.9657 18.7093 11.7524 19.456C11.5497 20.192 11.2564 20.7307 10.8724 21.072H14.2164ZM23.4149 18.272L18.8229 18.288V18.32C18.8229 19.216 19.0255 19.904 19.4309 20.384C19.8362 20.864 20.4122 21.104 21.1589 21.104C21.9375 21.104 22.6522 20.8693 23.3029 20.4L23.4309 20.496L23.2389 21.584C22.4922 21.9467 21.7455 22.128 20.9989 22.128C19.9535 22.128 19.1322 21.7973 18.5349 21.136C17.9375 20.464 17.6389 19.5467 17.6389 18.384C17.6389 17.2107 17.9375 16.2773 18.5349 15.584C19.1322 14.8907 19.9375 14.544 20.9509 14.544C21.8042 14.544 22.4655 14.7893 22.9349 15.28C23.4042 15.76 23.6389 16.432 23.6389 17.296C23.6389 17.584 23.6175 17.856 23.5749 18.112L23.4149 18.272ZM20.9509 15.44C20.4175 15.44 19.9695 15.616 19.6069 15.968C19.2549 16.3093 19.0202 16.7947 18.9029 17.424L22.4389 17.36L22.4709 17.136C22.4709 16.592 22.3375 16.176 22.0709 15.888C21.8149 15.5893 21.4415 15.44 20.9509 15.44ZM30.5666 14.672L30.5026 18.784L30.5506 22H29.3026L29.3506 18.896L29.3186 15.536H27.4146L27.3506 16.128C27.212 17.6107 27.0466 18.768 26.8546 19.6C26.6626 20.4213 26.4226 21.024 26.1346 21.408C25.8573 21.7813 25.4893 22.0213 25.0306 22.128L24.7106 22.16L24.5026 21.184C25.0893 20.9813 25.5053 20.528 25.7506 19.824C26.0066 19.12 26.22 17.8187 26.3906 15.92L26.5186 14.704L26.5026 14.672H30.5666ZM35.5234 14.544C36.2167 14.544 36.7607 14.7147 37.1554 15.056C37.5607 15.3973 37.7634 15.8667 37.7634 16.464C37.7634 16.656 37.7314 17.3173 37.6674 18.448C37.6034 19.5787 37.5714 20.2347 37.5714 20.416C37.5714 20.6507 37.6087 20.816 37.6834 20.912C37.758 20.9973 37.886 21.04 38.0674 21.04C38.2274 21.04 38.4087 21.008 38.6114 20.944L38.7394 21.056L38.6114 21.776C38.302 21.9573 37.998 22.064 37.6994 22.096C37.3687 22.064 37.102 21.9467 36.8994 21.744C36.7074 21.5413 36.606 21.264 36.5954 20.912H36.4834C35.9074 21.4987 35.3367 21.8987 34.7714 22.112C34.0567 22.112 33.4967 21.936 33.0914 21.584C32.6967 21.2213 32.4994 20.7307 32.4994 20.112C32.4994 19.2053 32.9954 18.6347 33.9874 18.4L36.5794 17.792L36.5954 16.752C36.5954 16.336 36.4834 16.016 36.2594 15.792C36.046 15.568 35.7367 15.456 35.3314 15.456C34.638 15.456 33.886 15.808 33.0754 16.512L32.9474 16.448L32.7874 15.536C33.6727 14.8747 34.5847 14.544 35.5234 14.544ZM36.5634 18.608L34.2434 19.168C33.838 19.2853 33.6354 19.5413 33.6354 19.936C33.6354 20.288 33.7314 20.5653 33.9234 20.768C34.126 20.96 34.3927 21.056 34.7234 21.056C35.31 21.056 35.9074 20.6773 36.5154 19.92L36.5634 18.608ZM46.2636 14.672L46.2156 18.784L46.2636 22H45.0156L45.0636 18.896V18.784L41.5276 18.8L41.5756 22H40.3276L40.3916 18.896L40.3436 14.672H41.5756L41.5436 17.824L45.0636 17.84L45.0316 14.672H46.2636ZM51.5305 14.544C52.5225 14.544 53.2905 14.8693 53.8345 15.52C54.3892 16.16 54.6665 17.0667 54.6665 18.24C54.6665 19.4773 54.3785 20.4373 53.8025 21.12C53.2265 21.792 52.4052 22.128 51.3385 22.128C50.3358 22.128 49.5572 21.808 49.0025 21.168C48.4585 20.5173 48.1865 19.6053 48.1865 18.432C48.1865 17.1947 48.4745 16.24 49.0505 15.568C49.6372 14.8853 50.4638 14.544 51.5305 14.544ZM51.4505 15.44C50.7785 15.44 50.2665 15.6693 49.9145 16.128C49.5625 16.5867 49.3865 17.2587 49.3865 18.144C49.3865 20.192 50.0638 21.216 51.4185 21.216C52.7945 21.216 53.4825 20.32 53.4825 18.528C53.4825 17.5147 53.3065 16.7467 52.9545 16.224C52.6132 15.7013 52.1118 15.44 51.4505 15.44ZM63.0731 18.176C64.1611 18.4107 64.7051 18.992 64.7051 19.92C64.7051 21.3387 63.5958 22.048 61.3771 22.048C60.7371 22.048 60.0331 22.032 59.2651 22L59.3291 18.896L59.2811 14.672L61.8251 14.656C62.6358 14.656 63.2598 14.8107 63.6971 15.12C64.1345 15.4187 64.3531 15.856 64.3531 16.432C64.3531 17.2533 63.9265 17.8347 63.0731 18.176ZM63.1851 16.576C63.1851 15.8293 62.6091 15.456 61.4571 15.456C61.0305 15.456 60.6945 15.4613 60.4491 15.472L60.4331 17.856L61.9051 17.904C62.7585 17.744 63.1851 17.3013 63.1851 16.576ZM61.4891 21.264C62.8545 21.264 63.5371 20.8053 63.5371 19.888C63.5371 19.1733 63.0518 18.7627 62.0811 18.656L60.4171 18.672V18.784L60.4491 21.216C60.7798 21.248 61.1265 21.264 61.4891 21.264Z" fill="#181818"></path>
+                                <g opacity="0.95">
+                                    <path d="M85.5941 22.274C85.2047 22.274 84.7938 22.1877 84.5126 21.9721C84.3395 21.8212 84.1016 21.5193 84.1016 21.0234V10.7383H86.2863V19.9237C86.2863 20.0531 86.2647 20.2687 86.4377 20.4196C86.5026 20.4628 86.6324 20.549 86.9785 20.549H93.338V22.274H85.5941Z" fill="#181818"></path>
+                                    <path d="M96.8869 11.8992C97.2979 10.9289 97.7521 10.6055 98.7904 10.6055C99.7854 10.6055 100.283 10.9289 100.694 11.8992L105.063 22.2705H102.771L101.581 19.3597H96L94.8319 22.2705H92.5391L96.8869 11.8992ZM96.5624 17.8072H101.018L99.1365 13.1067C99.0716 12.9342 98.9635 12.6323 98.812 12.6323C98.6606 12.6323 98.5525 12.9557 98.4876 13.1067L96.5624 17.8072Z" fill="#181818"></path>
+                                    <path d="M112.85 10.7383C113.477 10.7383 114.343 10.803 114.948 11.4283C115.597 12.0967 115.684 13.1532 115.684 13.9079C115.684 14.5332 115.64 15.1801 115.143 15.7838C114.818 16.1719 114.472 16.3444 114.061 16.3875V16.4522C114.602 16.4954 115.056 16.7541 115.338 17.056C115.878 17.6597 115.878 18.4791 115.878 19.1259C115.878 19.8806 115.878 20.8078 115.208 21.5409C114.537 22.274 113.802 22.274 113.088 22.274H107.55C106.966 22.274 106.447 22.3387 105.971 21.8212C105.863 21.6918 105.582 21.3037 105.582 20.6568V12.3986C105.582 11.9673 105.69 11.5145 105.95 11.2126C106.296 10.803 106.815 10.7383 107.183 10.7383H112.85ZM107.745 15.5682H111.985C112.417 15.5682 112.872 15.5682 113.175 15.1585C113.261 15.0507 113.412 14.7704 113.412 13.9942C113.412 13.6707 113.391 13.1101 113.023 12.7651C112.699 12.4632 112.309 12.4632 111.942 12.4632H108.372C108.199 12.4632 108.005 12.4417 107.875 12.5926C107.745 12.7436 107.723 12.9807 107.723 13.1101L107.745 15.5682ZM107.745 19.6865C107.745 20.0747 107.788 20.2687 107.875 20.355C108.048 20.549 108.416 20.5275 108.589 20.5275H112.028C112.374 20.5275 112.98 20.5059 113.304 20.1178C113.542 19.8159 113.607 19.32 113.607 18.9534C113.607 18.63 113.564 18.0909 113.369 17.7891C113.239 17.6166 112.915 17.3147 112.201 17.3147H107.767L107.745 19.6865Z" fill="#181818"></path>
+                                    <path d="M117.155 20.549H123.58C124.618 20.549 124.661 19.6865 124.661 19.2984C124.661 18.8456 124.553 18.3066 123.536 18.0047L118.972 16.56C118.799 16.5169 118.064 16.2582 117.61 15.6976C117.09 15.0723 117.004 14.1666 117.004 13.5198C117.004 12.8298 117.09 11.9889 117.739 11.3851C118.345 10.8245 119.08 10.7383 119.643 10.7383H126.305V12.4632H120.4C120.097 12.4632 119.751 12.4848 119.491 12.722C119.21 12.9807 119.189 13.3904 119.189 13.606C119.189 14.1235 119.34 14.6195 120.27 14.8998L124.51 16.2366C125.289 16.4738 125.808 16.7325 126.154 17.056C126.846 17.7244 126.911 18.7378 126.911 19.2769C126.911 20.01 126.803 20.8078 126.327 21.4115C125.743 22.1446 125.029 22.2309 124.25 22.2309H117.155V20.549Z" fill="#181818"></path>
+                                    <path d="M131.278 11.8992C131.688 10.9289 132.143 10.6055 133.181 10.6055C134.176 10.6055 134.674 10.9289 135.085 11.8992L139.454 22.2705H137.161L135.971 19.3597H130.391L129.223 22.2705H126.93L131.278 11.8992ZM130.953 17.8072H135.409L133.527 13.1067C133.462 12.9342 133.354 12.6323 133.203 12.6323C133.051 12.6323 132.943 12.9557 132.878 13.1067L130.953 17.8072Z" fill="#181818"></path>
+                                    <path d="M141.446 22.274C141.056 22.274 140.645 22.1877 140.364 21.9721C140.191 21.8212 139.953 21.5193 139.953 21.0234V10.7383H142.138V19.9237C142.138 20.0531 142.116 20.2687 142.289 20.4196C142.354 20.4628 142.484 20.549 142.83 20.549H149.19V22.274H141.446Z" fill="#181818"></path>
+                                    <path d="M151.611 22.2741C151.114 22.2741 150.66 22.2741 150.292 21.9075C149.903 21.5194 149.859 21.0019 149.859 20.5491V12.3771C149.859 11.9243 150.011 11.4499 150.249 11.1696C150.638 10.7599 151.2 10.7168 151.633 10.7168H159.053V12.4418H152.801C152.607 12.4418 152.369 12.4633 152.196 12.6143C152.022 12.7868 152.022 13.0024 152.022 13.1749V15.5036H158.901V17.2285H152.044V19.9238C152.044 20.0963 152.109 20.2904 152.217 20.3766C152.347 20.506 152.607 20.5275 152.953 20.5275H159.139V22.2525H151.611V22.2741Z" fill="#181818"></path>
+                                    <path d="M160.286 20.549H166.689C167.727 20.549 167.771 19.6865 167.771 19.2984C167.771 18.8456 167.662 18.3066 166.646 18.0047L162.082 16.56C161.909 16.5169 161.173 16.2582 160.719 15.6976C160.2 15.0723 160.113 14.1666 160.113 13.5198C160.113 12.8298 160.2 11.9889 160.849 11.3851C161.454 10.8245 162.19 10.7383 162.752 10.7383H169.415V12.4632H163.488C163.185 12.4632 162.839 12.4848 162.579 12.722C162.298 12.9807 162.276 13.3904 162.276 13.606C162.276 14.1235 162.428 14.6195 163.358 14.8998L167.598 16.2366C168.376 16.4738 168.895 16.7325 169.242 17.056C169.934 17.7244 169.999 18.7378 169.999 19.2769C169.999 20.01 169.89 20.8078 169.415 21.4115C168.831 22.1446 168.117 22.2309 167.338 22.2309H160.221V20.549H160.286Z" fill="#181818"></path>
+                                    <path d="M79.6042 10.0048L75.7971 0.862482C75.6673 0.560614 75.5592 0.344993 75.4294 0.237183C75.278 0.0862483 75.0616 0 74.8021 0C74.5425 0 74.3262 0.0862483 74.1748 0.237183C74.045 0.344993 73.9368 0.560614 73.8071 0.862482L70 10.0264V20.5918C70 21.1524 70.1082 21.5405 70.3461 21.7992C70.584 22.058 70.9301 22.1658 71.3844 22.1658H78.2414C78.6957 22.1658 79.0417 22.0364 79.2797 21.7992C79.5176 21.5405 79.6258 21.1524 79.6258 20.5918L79.6042 10.0048ZM78.674 10.0048V11.6435C78.5226 11.5573 78.3496 11.4926 78.1549 11.471C77.8304 11.4279 77.5276 11.5141 77.2896 11.6866L75.5159 9.8323C75.5808 9.70293 75.6241 9.57355 75.6457 9.44418C75.7322 8.7542 75.2563 8.1289 74.5641 8.04265C73.8719 7.9564 73.2446 8.43077 73.1581 9.12075C73.1149 9.53043 73.2663 9.91855 73.5475 10.1989L72.7471 11.8591C72.7039 11.8591 72.6606 11.8376 72.6173 11.8376C72.4227 11.816 72.2064 11.8376 72.0333 11.9023L71.0167 9.81074L74.4992 1.03498C74.5858 0.819358 74.6939 0.711548 74.8021 0.711548C74.9102 0.711548 74.9968 0.819358 75.1049 1.03498L78.674 10.0048Z" fill="#181818"></path>
+                                    <path d="M78.6736 13.7575V20.6573C78.6736 20.9161 78.6303 21.0886 78.5438 21.1748C78.4573 21.2611 78.2842 21.3042 78.0463 21.3042H71.557C71.319 21.3042 71.146 21.2611 71.0595 21.1748C70.9729 21.0886 70.9297 20.9161 70.9297 20.6573V11.0838L71.4921 12.2481C71.3407 12.4206 71.2542 12.6362 71.2109 12.895C71.1244 13.585 71.6002 14.2103 72.2924 14.2965C72.9846 14.3828 73.6119 13.9084 73.6985 13.2184C73.7417 12.8087 73.5903 12.4206 73.3307 12.1619L74.1311 10.5016C74.1743 10.5016 74.2176 10.5232 74.2609 10.5232C74.5637 10.5663 74.8665 10.48 75.1045 10.3291L76.8998 12.1834C76.8349 12.2912 76.8133 12.4206 76.7917 12.55C76.7052 13.24 77.181 13.8653 77.8732 13.9515C78.1544 13.9731 78.4356 13.9084 78.6736 13.7575Z" fill="#EA524E"></path>
+                                </g>
+                            </svg></div>
+                    </div>
+                    <div class="footer-grid__el wrapper-dropDownList">
+                        <div class="footer__title dropDownList-title">Свет</div>
+                        <div class="dropDownList-hidden">
+                            <div class="footer__menu"><a href="#">Люстры</a><a href="#">Подвесные</a><a href="#">Потолочные</a><a href="#">Настенные</a><a href="#">Напольные</a></div>
+                        </div>
+                    </div>
+                    <div class="footer-grid__el wrapper-dropDownList">
+                        <div class="footer__title dropDownList-title">Стулья</div>
+                        <div class="dropDownList-hidden">
+                            <div class="footer__menu"><a href="#">Люстры</a><a href="#">Подвесные</a><a href="#">Потолочные</a><a href="#">Настенные</a><a href="#">Напольные</a></div>
+                        </div>
+                    </div>
+                    <div class="footer-grid__el wrapper-dropDownList">
+                        <div class="footer__title dropDownList-title">Столы</div>
+                        <div class="dropDownList-hidden">
+                            <div class="footer__menu"><a href="#">Люстры</a><a href="#">Подвесные</a><a href="#">Потолочные</a><a href="#">Настенные</a><a href="#">Напольные</a></div>
+                        </div>
+                    </div>
+                    <div class="footer-grid__el wrapper-dropDownList">
+                        <div class="footer__title dropDownList-title">Spectr</div>
+                        <div class="dropDownList-hidden">
+                            <div class="footer__menu"><a href="#">Люстры</a><a href="#">Подвесные</a><a href="#">Потолочные</a></div>
+                        </div>
+                    </div>
+                    <div class="footer-grid__el">
+                        <div class="footer__title">Контактная информация</div>
+                        <div class="footer__phone"><a href="tel:+79181008886">+7 (918) 100-888-6</a></div>
+                        <div class="footer__address">г. Краснодар, ул. Красных Партизан, 367</div>
+                        <div class="footer__email"><a href="mailto:info@spectr-shop.ru">info@spectr-shop.ru</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div><a class="popup-link" href="#popup_1">Товар добавлен в корзину</a><a class="popup-link" href="#popup_2">Отправить заявку</a><a class="popup-link" href="#popup_3">Спасибо</a>
+    <div class="popup" id="popup_1">
+        <div class="popup__body">
+            <div class="popup__content"><a class="popup__close close-popup"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewbox="0 0 18 18">
+                        <defs>
+                            <path id="avzva" d="M691.485 160.07l-1.414 1.415-7.071-7.071-7.071 7.071-1.414-1.414 7.07-7.071-7.07-7.071 1.414-1.415 7.07 7.071 7.072-7.07 1.414 1.414-7.07 7.07z"></path>
+                        </defs>
+                        <g>
+                            <g transform="translate(-674 -144)">
+                                <use fill="#000" xlink:href="#avzva"></use>
+                            </g>
+                        </g>
+                    </svg></a>
+                <div class="popup__title">Товар добавлен в корзину</div>
+                <div class="popup__grid">
+                    <div class="basket-grid-cards-el">
+                        <div class="basket-grid-cards-el__img" style="background-image: url('img/basket/card2.png');"></div>
+                        <div class="basket-grid-cards-el__name">Люстра <br> DUMO MD8506/6 ADUMO MD8506/6A</div>
+                        <div class="basket-grid-cards-el__quantity card-info__quantity">
+                            <div class="card-info__minus"><svg width="16" height="2" viewbox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.33333 2C0.596953 2 -1.95702e-08 1.55229 -4.37114e-08 1C-6.78525e-08 0.447716 0.596954 6.89162e-07 1.33333 6.56974e-07L14.6667 7.41554e-08C15.403 4.19672e-08 16 0.447715 16 1C16 1.55228 15.403 2 14.6667 2L1.33333 2Z" fill="#898989"></path>
+                                </svg></div><input class="card-info__number" data-max="10" value="1">
+                            <div class="card-info__plus"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C8.55229 16 9 15.403 9 14.6667V9H14.6667C15.403 9 16 8.55228 16 8C16 7.44771 15.403 7 14.6667 7H9V1.33333C9 0.596953 8.55228 0 8 0C7.44771 0 7 0.596953 7 1.33333L7 7H1.33333C0.596954 7 0 7.44772 0 8C0 8.55229 0.596953 9 1.33333 9H7L7 14.6667C7 15.403 7.44772 16 8 16Z" fill="#898989"></path>
+                                </svg></div>
+                        </div>
+                        <div class="basket-grid-cards-el__price"><span>29 916 ₽</span></div>
+                        <div class="basket-grid-cards-el__delite"><svg width="26" height="26" viewbox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_380_4859)">
+                                    <path d="M21.3197 2.65307H16.2083V1.59189C16.2083 0.714104 15.4942 0 14.6164 0H11.4329C10.5551 0 9.84097 0.714104 9.84097 1.59189V2.65307H4.72935C3.85157 2.65307 3.1377 3.36717 3.1377 4.24495V6.89779H4.19888L5.06554 24.4081C5.06554 25.2859 5.77942 26 6.6572 26H19.3918C20.2696 26 20.9837 25.2859 20.9837 24.4081L21.8504 6.89779H22.9116V4.24495C22.9116 3.36717 22.1975 2.65307 21.3197 2.65307ZM10.9022 1.59189C10.9022 1.29922 11.14 1.06118 11.4329 1.06118H14.6164C14.9093 1.06118 15.1471 1.29922 15.1471 1.59189V2.65307H10.9022V1.59189ZM19.9225 24.4081C19.9225 24.701 19.6847 24.9388 19.3918 24.9388H6.6572C6.36453 24.9388 6.12673 24.701 6.12673 24.4081L5.26006 6.89779H20.7892L19.9225 24.4081ZM21.8504 5.83661H4.19888V4.24495C4.19888 3.95228 4.43669 3.71425 4.72935 3.71425H21.3197C21.6126 3.71425 21.8504 3.95228 21.8504 4.24495V5.83661Z" fill="black"></path>
+                                    <path d="M16.2084 22.2857C16.5018 22.2857 16.7389 22.0483 16.7389 21.7552V10.0815C16.7389 9.78836 16.5018 9.55078 16.2084 9.55078C15.9151 9.55078 15.6777 9.78836 15.6777 10.0815V21.7552C15.6777 22.0483 15.9151 22.2857 16.2084 22.2857Z" fill="black"></path>
+                                    <path d="M13.0256 22.2857C13.3189 22.2857 13.5563 22.0483 13.5563 21.7552V10.0815C13.5563 9.78836 13.3189 9.55078 13.0256 9.55078C12.7325 9.55078 12.4951 9.78836 12.4951 10.0815V21.7552C12.4951 22.0483 12.7325 22.2857 13.0256 22.2857Z" fill="black"></path>
+                                    <path d="M9.84223 22.2857C10.1356 22.2857 10.3727 22.0483 10.3727 21.7552V10.0815C10.3727 9.78836 10.1356 9.55078 9.84223 9.55078C9.54888 9.55078 9.31152 9.78836 9.31152 10.0815V21.7552C9.31152 22.0483 9.54888 22.2857 9.84223 22.2857Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_380_4859">
+                                        <rect width="26" height="26" fill="white"></rect>
+                                    </clippath>
+                                </defs>
+                            </svg></div>
+                    </div>
+                    <div class="basket-grid-cards-el">
+                        <div class="basket-grid-cards-el__img" style="background-image: url('img/basket/card2.png');"></div>
+                        <div class="basket-grid-cards-el__name">Люстра <br> DUMO MD8506/6 ADUMO MD8506/6A</div>
+                        <div class="basket-grid-cards-el__quantity card-info__quantity">
+                            <div class="card-info__minus"><svg width="16" height="2" viewbox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.33333 2C0.596953 2 -1.95702e-08 1.55229 -4.37114e-08 1C-6.78525e-08 0.447716 0.596954 6.89162e-07 1.33333 6.56974e-07L14.6667 7.41554e-08C15.403 4.19672e-08 16 0.447715 16 1C16 1.55228 15.403 2 14.6667 2L1.33333 2Z" fill="#898989"></path>
+                                </svg></div><input class="card-info__number" data-max="10" value="1">
+                            <div class="card-info__plus"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C8.55229 16 9 15.403 9 14.6667V9H14.6667C15.403 9 16 8.55228 16 8C16 7.44771 15.403 7 14.6667 7H9V1.33333C9 0.596953 8.55228 0 8 0C7.44771 0 7 0.596953 7 1.33333L7 7H1.33333C0.596954 7 0 7.44772 0 8C0 8.55229 0.596953 9 1.33333 9H7L7 14.6667C7 15.403 7.44772 16 8 16Z" fill="#898989"></path>
+                                </svg></div>
+                        </div>
+                        <div class="basket-grid-cards-el__price"><span>29 916 ₽</span></div>
+                        <div class="basket-grid-cards-el__delite"><svg width="26" height="26" viewbox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_380_4859)">
+                                    <path d="M21.3197 2.65307H16.2083V1.59189C16.2083 0.714104 15.4942 0 14.6164 0H11.4329C10.5551 0 9.84097 0.714104 9.84097 1.59189V2.65307H4.72935C3.85157 2.65307 3.1377 3.36717 3.1377 4.24495V6.89779H4.19888L5.06554 24.4081C5.06554 25.2859 5.77942 26 6.6572 26H19.3918C20.2696 26 20.9837 25.2859 20.9837 24.4081L21.8504 6.89779H22.9116V4.24495C22.9116 3.36717 22.1975 2.65307 21.3197 2.65307ZM10.9022 1.59189C10.9022 1.29922 11.14 1.06118 11.4329 1.06118H14.6164C14.9093 1.06118 15.1471 1.29922 15.1471 1.59189V2.65307H10.9022V1.59189ZM19.9225 24.4081C19.9225 24.701 19.6847 24.9388 19.3918 24.9388H6.6572C6.36453 24.9388 6.12673 24.701 6.12673 24.4081L5.26006 6.89779H20.7892L19.9225 24.4081ZM21.8504 5.83661H4.19888V4.24495C4.19888 3.95228 4.43669 3.71425 4.72935 3.71425H21.3197C21.6126 3.71425 21.8504 3.95228 21.8504 4.24495V5.83661Z" fill="black"></path>
+                                    <path d="M16.2084 22.2857C16.5018 22.2857 16.7389 22.0483 16.7389 21.7552V10.0815C16.7389 9.78836 16.5018 9.55078 16.2084 9.55078C15.9151 9.55078 15.6777 9.78836 15.6777 10.0815V21.7552C15.6777 22.0483 15.9151 22.2857 16.2084 22.2857Z" fill="black"></path>
+                                    <path d="M13.0256 22.2857C13.3189 22.2857 13.5563 22.0483 13.5563 21.7552V10.0815C13.5563 9.78836 13.3189 9.55078 13.0256 9.55078C12.7325 9.55078 12.4951 9.78836 12.4951 10.0815V21.7552C12.4951 22.0483 12.7325 22.2857 13.0256 22.2857Z" fill="black"></path>
+                                    <path d="M9.84223 22.2857C10.1356 22.2857 10.3727 22.0483 10.3727 21.7552V10.0815C10.3727 9.78836 10.1356 9.55078 9.84223 9.55078C9.54888 9.55078 9.31152 9.78836 9.31152 10.0815V21.7552C9.31152 22.0483 9.54888 22.2857 9.84223 22.2857Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_380_4859">
+                                        <rect width="26" height="26" fill="white"></rect>
+                                    </clippath>
+                                </defs>
+                            </svg></div>
+                    </div>
+                </div>
+                <div class="popup__bottom"><span>Товаров в корзине: 2</span><span>На сумму: <b>34 416 ₽</b></span>
+                    <div class="button-o">Перейти в корзину</div>
+                    <div class="button-w">Продолжить покупки</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup_2">
+        <div class="popup__body">
+            <form class="popup__content"><a class="popup__close close-popup"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewbox="0 0 18 18">
+                        <defs>
+                            <path id="avzva" d="M691.485 160.07l-1.414 1.415-7.071-7.071-7.071 7.071-1.414-1.414 7.07-7.071-7.07-7.071 1.414-1.415 7.07 7.071 7.072-7.07 1.414 1.414-7.07 7.07z"></path>
+                        </defs>
+                        <g>
+                            <g transform="translate(-674 -144)">
+                                <use fill="#000" xlink:href="#avzva"></use>
+                            </g>
+                        </g>
+                    </svg></a>
+                <div class="popup__title">Отправить заявку</div>
+                <div class="popup__text">Оставьте свои данные и наш специалист свяжется с вами в ближайшее время.</div>
+                <div class="popup__grid"><span class="input input--hoshi"><input class="input__field input__field--hoshi" id="input-1" type="text"><label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-1"><span class="input__label-content input__label-content--hoshi">Ваше имя*</span></label></span><span class="input input--hoshi"><input class="input__field input__field--hoshi" id="input-2" type="text"><label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-2"><span class="input__label-content input__label-content--hoshi">E-mail*</span></label></span><span class="input input--hoshi"><input class="input__field input__field--hoshi" id="input-3" type="text"><label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-3"><span class="input__label-content input__label-content--hoshi">Номер телефона</span></label></span><span class="input input--hoshi"><input class="input__field input__field--hoshi" id="input-4" type="text"><label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4"><span class="input__label-content input__label-content--hoshi">Комментарий</span></label></span></div>
+                <p>Нажав на кнопку, я даю согласие на обработку <a href="#">персональных данных</a></p><button class="button-o">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup" id="popup_3">
+        <div class="popup__body">
+            <div class="popup__content"><a class="popup__close close-popup"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewbox="0 0 18 18">
+                        <defs>
+                            <path id="avzva" d="M691.485 160.07l-1.414 1.415-7.071-7.071-7.071 7.071-1.414-1.414 7.07-7.071-7.07-7.071 1.414-1.415 7.07 7.071 7.072-7.07 1.414 1.414-7.07 7.07z"></path>
+                        </defs>
+                        <g>
+                            <g transform="translate(-674 -144)">
+                                <use fill="#000" xlink:href="#avzva"></use>
+                            </g>
+                        </g>
+                    </svg></a>
+                <div class="popup__title">Товар добавлен в корзину</div>
+                <div class="popup__text">Оставьте свои данные и наш специалист свяжется с вами в ближайшее время.</div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup_massagename-message">
+        <div class="popup__content">
+            <div class="popup__body">
+                <div class="popup__close close-popup"></div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup_video">
+        <div class="popup__content">
+            <div class="popup__body">
+                <div class="popup__close popup__close_video"></div>
+                <div class="popup__video _video"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

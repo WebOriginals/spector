@@ -28,15 +28,15 @@ $fontFamily: 'Alegreya Sans', sans-serif;
 //@import "_basice/forms";
 //@import "_basice/bread-crumbs-headline";
 
-@import "_basice/ui";
-@import "_defuld/nouislider";
+//@import "_basice/ui";
+//@import "_defuld/nouislider";
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 //component
-//@import "../component/InputList/scss/InpuList.scss";
+@import "../component/InputList/scss/InpuList.scss";
 @import "../component/Modals/scss/modals.scss";
-//@import "../component/lazyLoad/scss/lazyLoad.scss";
-//@import "../component/Tabs/scss/tabs.scss";
+@import "../component/lazyLoad/scss/lazyLoad.scss";
+@import "../component/Tabs/scss/tabs.scss";
 @import "../component/Quantity/scss/quantity.scss";
 @import "../component/dropDownLlist/scss/dropDownLlist.scss";
 
@@ -97,6 +97,10 @@ $fontFamily: 'Alegreya Sans', sans-serif;
 @import "articles/list";
 @import "articles/email";
 
+//articles internal
+@import "articles/main";
+@import "articles/aside";
+
 //project
 @import "project/list";
 
@@ -112,4 +116,6 @@ $fontFamily: 'Alegreya Sans', sans-serif;
 
 //working_conditions
 @import "working_conditions/grid";
+
+
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
