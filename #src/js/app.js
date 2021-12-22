@@ -11,6 +11,10 @@
 @@include('files/filter.js')
 @@include('files/priceSlider.js')
 
+//main
+@@include('files/shoppablie.js')
+@@include('files/openHints.js')
+
 
 
 //slider
