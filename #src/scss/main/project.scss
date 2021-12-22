@@ -1,0 +1,22 @@
+.main-project{
+  padding: 45px 0;
+  @include mq('tablet-wide') {
+    padding: 75px 0;
+  }
+
+  &__top{
+
+  }
+  &__slide{
+    min-width: 0;
+    padding: 0 15px;
+  }
+  &__slide{
+
+  }
+  &__grid{
+    display: grid;
+    justify-items: center;
+    padding-top: 30px;
+  }
+}

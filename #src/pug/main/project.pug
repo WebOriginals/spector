@@ -1,0 +1,19 @@
+section.main-project
+    ._container
+        .main-project__top.main-article-top.card-slider-top
+            .card-slider-top__title.h1 Проекты
+            .card-slider-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            .main-article-top__btn(data-da=".main-project__grid,767,last")
+                .button-w Смотреть все
+    .main-project__slider.slider
+        .swiper-wrapper
+            .swiper-slide.main-project__slide
+                +projectCard()
+            .swiper-slide.main-project__slide
+                +projectCard()
+            .swiper-slide.main-project__slide
+                +projectCard()
+            .swiper-slide.main-project__slide
+                +projectCard()
+    ._container
+        .main-project__grid

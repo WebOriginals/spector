@@ -28,4 +28,5 @@
 @@include('files/sliders/pageMain-insta.js')
 @@include('files/sliders/pageVideo-other.js')
 @@include('files/sliders/pageArticles-three.js')
+@@include('files/sliders/pageMain-project.js')
 //slider

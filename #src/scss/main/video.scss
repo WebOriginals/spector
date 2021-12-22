@@ -1,0 +1,19 @@
+.main-video{
+  padding: 45px 0;
+  @include mq('tablet-wide') {
+    padding: 75px 0;
+  }
+
+  &__grid{
+    display: grid;
+    grid-gap: 30px;
+    padding: 0 15px;
+
+    @include mq('tablet') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .video-list-grid__block{
+      @include adaptive-value(height,430,240,1)
+    }
+  }
+}
