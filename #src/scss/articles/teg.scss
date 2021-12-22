@@ -22,12 +22,20 @@
       display: none;
     }
 
-
-    span {
+    input:checked + label{
+      color: $color_3;
+    }
+    input:after{
+      display: none;
+    }
+    input{
+      display: none;
+    }
+    label {
       font-weight: 800;
       cursor: pointer;
 
-      &.active, &:hover {
+      &:hover {
         color: $color_3;
       }
     }
@@ -57,13 +65,21 @@
     &.height {
       height: 40px;
     }
-
-    span {
+    input{
+      display: none;
+    }
+    input:checked + label{
+      color: $color_3;
+      border: 1px solid $color_3;
+    }
+    label {
       padding: 5px 10px;
       border-radius: 50px;
       border: 1px solid #898989;
       color: #898989;
       cursor: pointer;
+      display: flex !important;
+      align-items: center;
 
       &.hiden {
         display: none;

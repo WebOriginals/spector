@@ -3467,13 +3467,24 @@ textarea.input {
   gap: 10px;
 }
 
-.articles-teg__buttons span {
+.articles-teg__buttons input:checked + label {
+  color: #EB8B55;
+}
+
+.articles-teg__buttons input:after {
+  display: none;
+}
+
+.articles-teg__buttons input {
+  display: none;
+}
+
+.articles-teg__buttons label {
   font-weight: 800;
   cursor: pointer;
 }
 
-.articles-teg__buttons span.active,
-.articles-teg__buttons span:hover {
+.articles-teg__buttons label:hover {
   color: #EB8B55;
 }
 
@@ -3503,19 +3514,34 @@ textarea.input {
   height: 40px;
 }
 
-.articles-teg__bottom span {
+.articles-teg__bottom input {
+  display: none;
+}
+
+.articles-teg__bottom input:checked + label {
+  color: #EB8B55;
+  border: 1px solid #EB8B55;
+}
+
+.articles-teg__bottom label {
   padding: 5px 10px;
   border-radius: 50px;
   border: 1px solid #898989;
   color: #898989;
   cursor: pointer;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.articles-teg__bottom span.hiden {
+.articles-teg__bottom label.hiden {
   display: none;
 }
 
-.articles-teg__bottom span:hover {
+.articles-teg__bottom label:hover {
   border: 1px solid #EB8B55;
   color: #EB8B55;
 }
@@ -4904,6 +4930,7 @@ textarea.input {
   }
 
   .articles_internal {
+    grid-gap: 130px;
     -ms-grid-columns: 1fr 270px;
     grid-template-columns: 1fr 270px;
   }

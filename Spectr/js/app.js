@@ -540,7 +540,7 @@ if (spollers.length > 0) {
     }, 0);
 }
 //Spollers =======================
-const tegs = document.querySelectorAll('.articles-teg__bottom span');
+const tegs = document.querySelectorAll('.articles-teg__bottom input');
 
 if(tegs.length > 0){
     const btn = document.querySelector('.articles-teg__button');

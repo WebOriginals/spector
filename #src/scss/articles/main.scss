@@ -3,6 +3,7 @@
   grid-gap: 30px;
 
   @include mq('tablet-wide') {
+    grid-gap: 130px;
     grid-template-columns: 1fr 270px;
   }
 }
