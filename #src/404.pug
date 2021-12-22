@@ -1,0 +1,17 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('404')
+    body
+        .wrapper
+            include pug/_basic/_header
+            .page.main
+                include pug/404/404
+                include pug/card/slider
+
+
+
+            include pug/_basic/_footer
+
+        include pug/_basic/_popup
+        include pug/_basic/_js

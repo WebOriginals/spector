@@ -1,6 +1,7 @@
 a.popup-link(href='#popup_1') Товар добавлен в корзину
 a.popup-link(href='#popup_2') Отправить заявку
 a.popup-link(href='#popup_3') Спасибо
+a.popup-link(href='#popup_4') заказать звонок
 
 .popup#popup_1
     .popup__body
@@ -121,6 +122,38 @@ a.popup-link(href='#popup_3') Спасибо
                             use(fill='#000', xlink:href='#avzva')
             .popup__title Товар добавлен в корзину
             .popup__text Оставьте свои данные и наш специалист свяжется с вами в ближайшее время.
+
+.popup#popup_4
+    .popup__body
+        form.popup__content
+            a.popup__close.close-popup
+                svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='18', height='18', viewbox='0 0 18 18')
+                    defs
+                        path#avzva(d='M691.485 160.07l-1.414 1.415-7.071-7.071-7.071 7.071-1.414-1.414 7.07-7.071-7.07-7.071 1.414-1.415 7.07 7.071 7.072-7.07 1.414 1.414-7.07 7.07z')
+                    g
+                        g(transform='translate(-674 -144)')
+                            use(fill='#000', xlink:href='#avzva')
+            .popup__title Заказать звонок
+            .popup__text Оставьте свои данные и наш специалист свяжется с вами в ближайшее время.
+            .popup__grid
+                span.input.input--hoshi
+                    input#input-1.input__field.input__field--hoshi(type='text')
+                    label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-1')
+                        span.input__label-content.input__label-content--hoshi Ваше имя*
+
+                span.input.input--hoshi
+                    input#input-3.input__field.input__field--hoshi(type='text')
+                    label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-3')
+                        span.input__label-content.input__label-content--hoshi Номер телефона
+
+                span.input.input--hoshi.full
+                    input#input-4.input__field.input__field--hoshi(type='text')
+                    label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+                        span.input__label-content.input__label-content--hoshi Комментарий
+
+
+            p Нажав на кнопку, я даю согласие на обработку <a href="#">персональных данных</a>
+            button.button-o Отправить
 
 .popup.popup_massagename-message
     .popup__content

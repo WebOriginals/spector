@@ -89,3 +89,23 @@
 		font-size: 16px;
 	}
 }
+#popup_4{
+	.popup__grid{
+		display: grid;
+		padding: 20px 0 30px;
+		@include mq('tablet-wide') {
+			grid-gap:0 30px;
+			padding: 50px 0 60px;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	p{
+		color: #898989;
+		font-size: 16px;
+	}
+	.full{
+		@include mq('tablet-wide') {
+			grid-column: span 2;
+		}
+	}
+}
