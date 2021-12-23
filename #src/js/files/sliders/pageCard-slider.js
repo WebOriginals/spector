@@ -3,9 +3,6 @@ if(document.querySelectorAll('.card-slider__slider').length > 0){
         let body = el.parentElement.parentElement;
         let prev = body.querySelector('.card-slider-top__prevBtn');
         let next = body.querySelector('.card-slider-top__nextBtn');
-        console.log(body);
-        console.log(prev);
-        console.log(next);
         let cardSlider_ = new Swiper(el, {
             slidesPerView: 1,
             spaceBetween: 5,

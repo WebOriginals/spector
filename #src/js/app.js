@@ -30,4 +30,5 @@
 @@include('files/sliders/pageVideo-other.js')
 @@include('files/sliders/pageArticles-three.js')
 @@include('files/sliders/pageMain-project.js')
+@@include('files/sliders/pageEquipment-card.js')
 //slider

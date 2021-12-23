@@ -1,0 +1,31 @@
+.brand{
+  padding: 45px 0;
+  @include mq('tablet-wide') {
+    padding: 75px 0;
+  }
+
+  &__title{
+    @include adaptive-value(margin-bottom, 30, 10, 1);
+  }
+  p{
+    @include adaptive-value(margin-bottom, 50, 20, 1);
+  }
+  &__grid{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    @include mq('tablet') {
+      grid-template-columns: repeat(3,1fr);
+    }
+    @include mq('tablet-wide') {
+      grid-gap: 60px 30px;
+      grid-template-columns: repeat(4,1fr);
+    }
+  }
+  &__img{
+
+    img{
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('Комплектация')
+    body
+        .wrapper
+            include pug/_basic/_header
+            .page.main
+                +crumbs('Комплектация')
+                +title('Комплектация')
+
+                include pug/equipment/advantages
+                include pug/equipment/working_us
+                include pug/equipment/done
+                include pug/equipment/brend
+                include pug/contacts/form
+
+
+
+            include pug/_basic/_footer
+
+        include pug/_basic/_popup
+        include pug/_basic/_js

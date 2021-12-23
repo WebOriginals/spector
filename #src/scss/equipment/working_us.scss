@@ -1,0 +1,49 @@
+.working_us {
+  padding: 45px 0;
+  @include mq('tablet-wide') {
+    padding: 75px 0;
+  }
+
+  &__title {
+    @include adaptive-value(margin-bottom, 30, 10, 1);
+  }
+
+  p {
+    @include adaptive-value(margin-bottom, 60, 30, 1);
+  }
+
+
+  &-card {
+    text-align: center;
+    position: relative;
+
+    &:not(:last-child):after {
+      content: '\2192';
+      position: absolute;
+      top: 50%;
+      right: -28px;
+    }
+
+    &__number {
+      @include adaptive-font(22, 18, 1);
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    &__body {
+      border-radius: 5px;
+      border: 1px solid #000000;
+      padding: 20px 10px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-weight: bold;
+      @include adaptive-font(22, 16, 1);
+    }
+  }
+
+  &__btn{
+    margin: 60px auto auto auto;
+  }
+}
