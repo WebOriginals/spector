@@ -15,6 +15,7 @@
 @@include('files/shoppablie.js')
 @@include('files/openHints.js')
 
+@@include('files/search.js')
 
 
 //slider
