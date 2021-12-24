@@ -122,10 +122,14 @@ $fontFamily: 'Alegreya Sans', sans-serif;
 
 
 //equipment
+@import "equipment/first";
 @import "equipment/advantages";
+@import "equipment/form";
 @import "equipment/working_us";
 @import "equipment/brend";
 @import "equipment/done";
+@import "equipment/opt";
+@import "equipment/project";
 
 
 //404

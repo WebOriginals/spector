@@ -1,0 +1,24 @@
+section.eq-form
+    ._container
+        form.eq-form__body(style="background-image: url('img/eq-bg.png');")
+            .eq-form__title.h2 Всё на своих местах
+            .eq-form__text Просто оставьте свои контакты и минимальную информацию о своей квартире, а остальное за нами!
+            .eq-form__grid
+                span.input.input--hoshi
+                    input#input-1.input__field.input__field--hoshi(type='text')
+                    label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-1')
+                        span.input__label-content.input__label-content--hoshi E-mail
+                span.input.input--hoshi
+                    input#input-2.input__field.input__field--hoshi(type='text')
+                    label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-2')
+                        span.input__label-content.input__label-content--hoshi Телефон
+
+
+                .eq-form__select
+                    select.form__select(name='room')
+                        option(value='Popular', selected='') Тип помещения
+                        option(value='Ascending') По возростанию
+                        option(value='Descending') По убывания
+
+                button.eq-form__btn.button-o Отправить
+            p Нажав на кнопку, я даю согласие на обработку персональных данных

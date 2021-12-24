@@ -1,0 +1,45 @@
+.eq-first {
+  padding:  0  0 45px;
+  @include mq('tablet-wide') {
+    padding: 0 0 75px;
+  }
+
+  &__title {
+    @include adaptive-font(26, 18, 1);
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+
+  &-grid {
+    display: grid;
+    grid-gap: 30px;
+    @include mq('tablet') {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__text {
+      .h4 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__img {
+      min-height: 200px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  &__btn{
+    display: inline-flex;
+    margin-right: 15px;
+  }
+}
