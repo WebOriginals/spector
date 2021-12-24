@@ -761,16 +761,20 @@ if (window.screen.width > 900) {
     }
 }
 
-const btnSearch = document.querySelector('.search');
+const btnsSearch = document.querySelectorAll('.search');
 const wrapperSearch = document.querySelector('.header-body-search');
 const closeSearch = document.querySelector('.header-body-search__close');
 
-
-btnSearch.addEventListener('click', (event) => {
-    event.preventDefault();
-    wrapperSearch.classList.add('open-search');
-
+btnsSearch.forEach((btn) => {
+    btn.addEventListener('click', (event) => {
+        console.log(1);
+        event.preventDefault();
+        wrapperSearch.classList.add('open-search');
+    })
 })
+
+
+
 closeSearch.addEventListener('click', (event) => {
     wrapperSearch.classList.remove('open-search');
 })

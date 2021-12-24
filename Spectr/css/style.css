@@ -5015,7 +5015,7 @@ textarea.input {
 
   .header-body-search {
     width: calc(100% - 200px);
-    padding: 60px;
+    padding: 30px;
   }
 
   body._touch .menu__arrow {
@@ -5672,7 +5672,7 @@ textarea.input {
   }
 
   .header-body-search {
-    width: calc(100% - 300px);
+    width: calc(100% - 340px);
   }
 }
 

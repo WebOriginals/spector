@@ -244,10 +244,10 @@
 
       @include mq('tablet-wide') {
         width: calc(100% - 200px);
-        padding:  60px;
+        padding:  30px;
       }
       @include mq('desktop1350') {
-        width: calc(100% - 300px);
+        width: calc(100% - 340px);
       }
       .wr{
         width: 100%;
