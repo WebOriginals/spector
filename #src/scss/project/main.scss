@@ -1,22 +1,54 @@
-.project-main{
+.project-main {
 
-  &-body{
-
-    &__textImg{
-      @include adaptive-value(padding-top,20,15,1);
-      @include adaptive-value(padding-bottom,20,15,1);
-    }
-    &__title{
-      @include adaptive-value(margin-bottom,20,10,1);
-    }
-    p{
-      @include adaptive-value(margin-bottom,15,10,1);
-    }
-    q{
-      @include adaptive-value(margin-bottom,15,10,1);
+  &-info {
+    display: grid;
+    grid-gap: 30px;
+    @include adaptive-value(margin-bottom, 68, 36, 1);
+    @include mq('tablet-wide') {
+      grid-template-columns: auto auto auto;
+      justify-content: space-between;
+      p {
+        grid-column: span 3;
+      }
     }
 
-    &-signature{
+    p {
+      margin-top: 10px;
+    }
+
+    &-el {
+
+      &__title {
+        font-weight: 300;
+        @include adaptive-value(font-size, 48, 36, 1);
+      }
+
+      &__text {
+        @include adaptive-value(font-size, 18, 16, 1);
+      }
+    }
+  }
+
+  &-body {
+
+    &__textImg {
+      @include adaptive-value(padding-top, 20, 15, 1);
+      @include adaptive-value(padding-bottom, 20, 15, 1);
+    }
+
+    &__title {
+      @include adaptive-value(margin-bottom, 20, 10, 1);
+    }
+
+    p {
+      @include adaptive-value(margin-bottom, 15, 10, 1);
+    }
+
+    q {
+      @include adaptive-value(margin-bottom, 15, 10, 1);
+    }
+
+    &-signature {
       font-style: italic;
       display: grid;
       grid-gap: 0px 20px;
@@ -26,14 +58,16 @@
       justify-items: flex-end;
       padding-top: 15px;
 
-      &__name{
-        @include adaptive-font(22,20,1);
+      &__name {
+        @include adaptive-font(22, 20, 1);
       }
-      &__post{
-        @include adaptive-font(18,16,1);
+
+      &__post {
+        @include adaptive-font(18, 16, 1);
         color: #898989;
       }
-      &__img{
+
+      &__img {
         width: 60px;
         height: 60px;
         background-size: cover;
@@ -43,9 +77,10 @@
         grid-row: span 2;
       }
     }
-    &__img{
+
+    &__img {
       position: relative;
-      @include adaptive-value(height,525,225,1);
+      @include adaptive-value(height, 525, 225, 1);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -53,15 +88,17 @@
     }
 
   }
-  &-spoller{
+
+  &-spoller {
     padding: 20px 0;
     border-top: 1px solid #E6E6E6;
 
 
-    &__title{
+    &__title {
       width: 100% !important;
     }
-    &-grid{
+
+    &-grid {
       display: grid;
       grid-gap: 10px;
       padding-top: 10px;
@@ -70,7 +107,7 @@
         grid-template-columns: 1fr 1fr;
       }
 
-      &__elem{
+      &__elem {
         border: 1px solid #E4E4E4;
         border-radius: 5px;
         padding: 10px;
@@ -79,18 +116,21 @@
         grid-template-columns: 88px 1fr;
         background-color: #fff;
       }
-      &__img{
+
+      &__img {
         grid-row: span 2;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
       }
-      &__name{
-        @include adaptive-font(18,18,1);
+
+      &__name {
+        @include adaptive-font(18, 18, 1);
       }
-      &__price{
+
+      &__price {
         font-weight: 500;
-        @include adaptive-font(24,24,1);
+        @include adaptive-font(24, 24, 1);
       }
     }
 
@@ -126,7 +166,7 @@
       &__link {
         display: block;
         position: relative;
-        transform: translate(177px,-55px);
+        transform: translate(177px, -55px);
       }
 
       &__body {

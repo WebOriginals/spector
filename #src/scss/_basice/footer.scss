@@ -112,4 +112,10 @@
       color: #898989;
     }
   }
+  a:hover{
+    color: $color_3;
+    path{
+      fill: $color_3;
+    }
+  }
 }

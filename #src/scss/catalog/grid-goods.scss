@@ -158,7 +158,7 @@
 
     &__favarite{
       cursor: pointer;
-      .active {
+      .active,&:hover {
         path {
           fill: $color_3;
         }

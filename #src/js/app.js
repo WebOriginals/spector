@@ -9,7 +9,7 @@
 
 //catalog
 @@include('files/filter.js')
-@@include('files/priceSlider.js')
+
 
 //main
 @@include('files/shoppablie.js')

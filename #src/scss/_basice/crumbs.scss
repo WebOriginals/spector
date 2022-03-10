@@ -22,6 +22,12 @@
       height: 2px;
       background-color: $color_7;
     }
+    li:last-child {
+      a{
+        color: $color_7;
+      }
+    }
+
 
     li:not(:last-child):after {
       content: '→';

@@ -19,9 +19,17 @@
         color: #898989;
         @include adaptive-font(16, 14, 1);
       }
+      svg:hover{
+
+      }
 
       a {
-
+          &:hover{
+            color: $color_3;
+            path{
+              fill:$color_3;
+            }
+          }
       }
     }
   }

@@ -87,9 +87,13 @@
         border-radius: 5px;
         align-content: flex-end;
 
+
         &:hover{
-          .articles-aside-body-project__text{
+          .articles-aside-body-video__text{
             color: $color_3;
+          }
+          path{
+            fill:$color_3;
           }
         }
       }

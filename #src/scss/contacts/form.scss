@@ -29,9 +29,14 @@
   p{
     color:#898989;
     margin-top: 10px;
+    @include adaptive-value(font-size,16,14,1);
 
     @include mq('tablet-wide') {
       grid-column: span 2;
+    }
+
+    a{
+      color:#898989;
     }
   }
   &__img{

@@ -38,6 +38,14 @@
         display: none;
       }
     }
+    &__prevBtn,&__nextBtn{
+      cursor: pointer;
+      &:hover{
+        path{
+          fill:$color_7;
+        }
+      }
+    }
 
   }
   &__slider{

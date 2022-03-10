@@ -159,6 +159,11 @@
           color: #898989;
           @include adaptive-font(24, 16, 1);
         }
+        &.usually{
+          color: $color_2;
+          @include adaptive-font(36, 20, 1);
+          font-weight: bold;
+        }
       }
 
       @include maq('tablet-wide') {
@@ -212,14 +217,24 @@
       align-items: center;
       gap: 5px;
       width: 130px;
+      cursor: pointer;
       @include mq('tablet-wide') {
         margin-bottom: 50px;
+      }
+      &:hover{
+        span{
+          color: $color_3;
+        }
+        path{
+          fill:$color_3;
+        }
       }
       &.active{
         path{
           fill:$color_3;
         }
       }
+
       @include maq('tablet-wide') {
         order: 7;
         margin-left: auto;
